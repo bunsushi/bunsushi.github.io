@@ -20,7 +20,7 @@ h2 {
 .navbar {
     /* margin-bottom: 50px; */
     background-color: #fff;
-    opacity: .95;
+    opacity: .98;
     font-family: 'Josefin Sans', sans-serif;
     text-transform: uppercase;
 }
@@ -48,8 +48,7 @@ footer {
 
 /* HOME */
 .landing-page {
-    /* background-image: url("../images/gplaypattern.png"); */
-    background-image: url("../images/darkness.png");
+    /* background-image: url("../images/darkness.png"); */
     text-align: left;;
     margin-top: 50px;
     padding: 40px;
@@ -68,7 +67,7 @@ footer {
     margin-top: 100px;
     letter-spacing: 5px;
     font-weight: 700;
-    opacity: .9;
+    opacity: .98;
 }
 
 #title-2 {
@@ -76,7 +75,7 @@ footer {
     padding: 25px;
     text-align: center;
     font-weight: bold;
-    opacity: .9;
+    opacity: .98;
 }
 
 .yellow-panel{
@@ -103,7 +102,7 @@ footer {
 }
 
 .gray-panel {
-    background-color: #777;
-    color: #fff;
+    background-color: #fff;
+    color: #333;
     text-align: center;
 }
