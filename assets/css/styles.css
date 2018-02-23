@@ -5,6 +5,7 @@ body {
     text-align: left;
     line-height: 2;
     letter-spacing: 1px;
+    background-image: url("../images/darkness.png");
 }
 
 h2 {
@@ -47,12 +48,12 @@ footer {
 
 /* HOME */
 .landing-page {
-    background-image: url("../images/gplaypattern.png");
+    /* background-image: url("../images/gplaypattern.png"); */
+    background-image: url("../images/darkness.png");
     text-align: left;;
     margin-top: 50px;
     padding: 40px;
     overflow: auto;
-    /* border-top: 10px #fbdf4b solid; */
 }
 
 #profile {
@@ -64,9 +65,10 @@ footer {
 #title-1 {
     background-color: #fff;
     padding: 25px;
-    margin-top: 75px;
+    margin-top: 100px;
     letter-spacing: 5px;
     font-weight: 700;
+    opacity: .9;
 }
 
 #title-2 {
@@ -74,6 +76,7 @@ footer {
     padding: 25px;
     text-align: center;
     font-weight: bold;
+    opacity: .9;
 }
 
 .yellow-panel{
@@ -103,5 +106,4 @@ footer {
     background-color: #777;
     color: #fff;
     text-align: center;
-    opacity: .7;
 }
