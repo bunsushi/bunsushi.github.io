@@ -6,6 +6,7 @@ body {
     line-height: 2;
     letter-spacing: 1px;
     background-image: url("../images/darkness.png");
+    margin-top: 50px;
 }
 
 h2 {
@@ -32,7 +33,7 @@ h2 {
 
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
     font-weight: 600;
-    border-bottom: 2px solid #fbdf4b;
+    border-bottom: 5px solid #fbdf4b;
 }
 
 .navbar-brand p {
@@ -44,15 +45,15 @@ h2 {
 /* FOOTER */
 footer {
     padding: 30px;
+    margin-top: 50px;
 }
 
 /* HOME */
 .landing-page {
-    /* background-image: url("../images/darkness.png"); */
     text-align: left;;
-    margin-top: 50px;
     padding: 40px;
     overflow: auto;
+    border-bottom: 10px #fbdf4b solid;
 }
 
 #profile {
@@ -82,23 +83,18 @@ footer {
     background-color: #fbdf4b;
     color: #333;
     padding-bottom: 50px;
-    margin-bottom: 50px;
-}
-
-.yellow-panel img {
-    width: 90%;
+    margin-top: 50px;
 }
 
 .white-panel {
     background-color: #fff;
-    color: #333;
-    border-top: 10px #fbdf4b solid;
-    padding-bottom: 50px;
-    margin-bottom: 50px;
+    color: #333;    padding-bottom: 50px;
+    margin-top: 50px;
 }
 
 .white-panel img {
-    width: 90%;
+    width: 100%;
+    margin: 10px auto;
 }
 
 .gray-panel {
