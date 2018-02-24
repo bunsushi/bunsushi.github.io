@@ -3,6 +3,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     color: #333;
     text-align: left;
+    /* font-size: 14pt; */
     line-height: 2;
     letter-spacing: 1px;
     background-image: url("../images/darkness.png");
@@ -95,6 +96,10 @@ footer {
 .white-panel img {
     width: 100%;
     margin: 10px auto;
+}
+
+#featured {
+    margin-top: 0;
 }
 
 .gray-panel {
