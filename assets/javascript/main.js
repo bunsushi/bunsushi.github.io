@@ -1,7 +1,5 @@
 $(document).ready(function () {
 
-    // $('body').scrollspy({ target: '#bs-example-navbar-collapse-1' })
-
     var featuredProjects = [
         {
             name: "Get Spaced",
@@ -11,7 +9,7 @@ $(document).ready(function () {
         {
             name: "You Have a Gambling Problem",
             image: "assets/images/gambling-problem.jpg",
-            url: "https://bunsushi.github.io/week-4-project"
+            url: "https://bunsushi.github.io/week-4-game"
         }]
 
     // GENERATE FEATURED PROJECTS

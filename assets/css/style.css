@@ -58,7 +58,7 @@ p {
 
 /* FOOTER */
 footer {
-    padding: 30px;
+    padding: 50px;
     margin-top: 50px;
 }
 
@@ -67,7 +67,6 @@ footer {
     text-align: left;;
     padding: 40px;
     overflow: auto;
-    border-bottom: 10px #fbdf4b solid;
 }
 
 #profile {
@@ -98,12 +97,14 @@ footer {
     color: #333;
     padding-bottom: 50px;
     margin-top: 50px;
+    border-top: 10px #fff solid;
 }
 
 .white-panel {
     background-color: #fff;
     color: #333;    padding-bottom: 50px;
     margin-top: 50px;
+    border-top: 10px #fbdf4b solid;
 }
 
 #featured {
@@ -115,8 +116,7 @@ footer {
     margin: 20px;
 }
 
-.gray-panel {
-    background-color: #fff;
-    color: #333;
+.footer-panel {
+    border: none;
     text-align: center;
 }
