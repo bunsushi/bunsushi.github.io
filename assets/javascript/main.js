@@ -3,12 +3,12 @@ $(document).ready(function () {
     var featuredProjects = [
         {
             name: "Get Spaced",
-            image: "assets/images/get-spaced.jpg",
+            image: "assets/images/get-spaced.JPG",
             url: "https://bunsushi.github.io/Hangman-Game"
         },
         {
             name: "You Have a Gambling Problem",
-            image: "assets/images/gambling-problem.jpg",
+            image: "assets/images/gambling-problem.JPG",
             url: "https://bunsushi.github.io/week-4-game"
         }]
 
