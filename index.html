@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
     <!-- Custom CSS -->
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/styles.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700|Montserrat" rel="stylesheet">
     <!-- Font Awesome -->
@@ -45,49 +45,28 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="dropdown">
-                        <a href="portfolio.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Portfolio
-                            <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="#">Action</a>
-                            </li>
-                            <li>
-                                <a href="#">Another action</a>
-                            </li>
-                            <li>
-                                <a href="#">Something else here</a>
-                            </li>
-                            <li role="separator" class="divider"></li>
-                            <li>
-                                <a href="#">Separated link</a>
-                            </li>
-                            <li role="separator" class="divider"></li>
-                            <li>
-                                <a href="#">One more separated link</a>
-                            </li>
-                        </ul>
+                    <li>
+                        <a href="portfolio.html">Portfolio</a>
                     </li>
                     <li>
-                        <a href="about.html">About</a>
+                        <a href="#about">About</a>
                     </li>
                     <li>
-                        <a href="contact.html">Contact</a>
+                        <a href="#contact">Contact</a>
                     </li>
                     <li>
                         <a href="https://github.com/bunsushi">
-                            <i class="fab fa-github"></i>
+                            <i class="fab fa-github fa-lg"></i>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <i class="fab fa-linkedin-in"></i>
+                            <i class="fab fa-linkedin-in fa-lg"></i>
                         </a>
                     </li>
                     <li>
                         <a href="https://twitter.com/bunsushi">
-                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-twitter fa-lg"></i>
                         </a>
                     </li>
                 </ul>
@@ -106,7 +85,10 @@
                 </div>
                 <div class="col-md-offset-1 col-md-6">
                     <h2 id="title-1">Hi, I'm Tegan</h2>
-                    <h4 id="title-2">Software Developer // <span><i class="fas fa-map-marker-alt"></i></span> Philadelphia, PA</h4>
+                    <h4 id="title-2">Software Developer //
+                        <span class="yellow-font">
+                            <i class="fas fa-map-marker-alt fa-lg"></i>
+                        </span> Philadelphia, PA</h4>
                 </div>
             </div>
             <!-- Hey there, you're gonna wanna use Scrollspy (http://getbootstrap.com/docs/3.3/javascript/#scrollspy-examples) for your nav -->
@@ -115,39 +97,49 @@
 
     <section class="white-panel" id="featured">
         <div class="container">
-            <h2>Featured Projects //</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <a href="https://placeholder.com">
-                        <img src="http://via.placeholder.com/350x350">
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="https://placeholder.com">
-                        <img src="http://via.placeholder.com/350x350">
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="https://placeholder.com">
-                        <img src="http://via.placeholder.com/350x350">
-                    </a>
-                </div>
-            </div>
+            <h2>// Featured Projects</h2>
+            <div id="projects"></div>
+
         </div>
     </section>
 
     <section class="yellow-panel">
         <div class="container">
-            <h2>Elevator Pitch //</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut ultrices leo. Sed tempor felis a augue dapibus,
-                mollis posuere leo venenatis. Proin congue massa libero, at tincidunt lectus commodo at. Proin sagittis,
-                ante eu venenatis egestas, urna dui posuere leo, vulputate sollicitudin ipsum mauris a lorem. Duis ultricies
-                lorem ac dui malesuada, dictum malesuada mauris scelerisque. Praesent vel volutpat justo. Ut congue lectus
-                at eros sodales, eu interdum quam volutpat. Mauris in urna libero. Etiam imperdiet diam at libero luctus,
-                sit amet eleifend odio egestas. Duis vitae ante accumsan ipsum ultrices convallis. Phasellus accumsan nulla
-                placerat tincidunt consequat. Sed orci ex, scelerisque et massa non, semper varius est. Praesent arcu eros,
-                imperdiet et eros at, elementum eleifend est. Nullam interdum aliquet justo, eget tincidunt lorem faucibus
-                quis. Nam viverra imperdiet eros ut convallis.</p>
+            <div class="col-md-7">
+                <h2 id="about">// Elevator Pitch</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut ultrices leo. Sed tempor felis a augue
+                    dapibus, mollis posuere leo venenatis. Proin congue massa libero, at tincidunt lectus commodo at. Proin
+                    sagittis, ante eu venenatis egestas, urna dui posuere leo, vulputate sollicitudin ipsum mauris a lorem.
+                    Duis ultricies lorem ac dui malesuada, dictum malesuada mauris scelerisque. Praesent vel volutpat justo.
+                    Ut congue lectus at eros sodales, eu interdum quam volutpat. Mauris in urna libero. Etiam imperdiet diam
+                    at libero luctus, sit amet eleifend odio egestas. Duis vitae ante accumsan ipsum ultrices convallis.
+                    Phasellus accumsan nulla placerat tincidunt consequat. Sed orci ex, scelerisque et massa non, semper
+                    varius est. Praesent arcu eros, imperdiet et eros at, elementum eleifend est. Nullam interdum aliquet
+                    justo, eget tincidunt lorem faucibus quis. Nam viverra imperdiet eros ut convallis.</p>
+            </div>
+            <div class="col-md-offset-1 col-md-4 white-panel">
+                <h2> // At a Glance</h2>
+                <p>Lorem ipsum</p>
+                <p>This is where I talk about my stacks on stacks on stacks</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="white-panel">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 id="contact">// Contact</h2>
+                    <p>Nam leo libero, volutpat ac tincidunt vitae, dignissim vitae mi. Duis vel diam ut tortor rhoncus hendrerit.
+                        Mauris vitae luctus metus. Donec id bibendum dolor, nec dignissim dui. Quisque feugiat porta est,
+                        in aliquam ligula vulputate et. Praesent in neque tellus. Cras ultricies egestas lacus, quis pulvinar
+                        purus bibendum ac. Proin ligula sem, dictum eget imperdiet sed, commodo finibus massa. Proin varius
+                        est quam, sit amet eleifend magna convallis ut. Etiam laoreet porttitor aliquet. Lorem ipsum dolor
+                        sit amet, consectetur adipiscing elit. Aliquam elementum magna libero, vitae convallis nisl gravida
+                        non. Cras fermentum at lorem a condimentum. Donec hendrerit lacinia dui, a ultricies dui interdum
+                        quis. Curabitur nec pulvinar tellus, eget vehicula lacus. Donec placerat a velit nec sollicitudin.</p>
+                </div>
+            </div>
         </div>
     </section>
 

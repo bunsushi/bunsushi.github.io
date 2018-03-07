@@ -3,11 +3,11 @@ body {
     font-family: 'Montserrat', sans-serif;
     color: #333;
     text-align: left;
-    /* font-size: 14pt; */
     line-height: 2;
     letter-spacing: 1px;
     background-image: url("../images/darkness.png");
     margin-top: 50px;
+    position: relative;
 }
 
 h2 {
@@ -16,6 +16,14 @@ h2 {
     letter-spacing: 15px;
     padding: 25px;
     text-align: center;
+}
+
+p {
+    font-size: 13pt;
+}
+
+.yellow-font {
+    color: #fbdf4b;
 }
 
 /* NAVIGATION */
@@ -32,15 +40,20 @@ h2 {
     letter-spacing: 3px;
 }
 
-.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
-    font-weight: 600;
-    border-bottom: 5px solid #fbdf4b;
+.navbar-default .navbar-nav>li>a:hover {
+    font-weight: bold;
+    color: #fbdf4b;
 }
 
 .navbar-brand p {
     width: 300px;
     color: #333;
     letter-spacing: 3px;
+}
+
+.navbar-default .navbar-nav .social>li>a:focus, .navbar-default .navbar-nav .social>li>a:hover {
+    border: none;
+    color: #fbdf4b;
 }
 
 /* FOOTER */
@@ -93,13 +106,13 @@ footer {
     margin-top: 50px;
 }
 
-.white-panel img {
-    width: 100%;
-    margin: 10px auto;
-}
-
 #featured {
     margin-top: 0;
+}
+
+.featured-project {
+    width: 30%;
+    margin: 20px;
 }
 
 .gray-panel {
