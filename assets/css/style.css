@@ -67,6 +67,8 @@ footer {
     text-align: left;;
     padding: 40px;
     overflow: auto;
+    border-bottom: 10px #fbdf4b solid;
+
 }
 
 #profile {
@@ -97,14 +99,16 @@ footer {
     color: #333;
     padding-bottom: 50px;
     margin-top: 50px;
-    border-top: 10px #fff solid;
 }
 
 .white-panel {
     background-color: #fff;
     color: #333;    padding-bottom: 50px;
     margin-top: 50px;
-    border-top: 10px #fbdf4b solid;
+}
+
+#projects, #recent-projects {
+    text-align: center;
 }
 
 #featured {
@@ -112,8 +116,9 @@ footer {
 }
 
 .featured-project {
-    width: 30%;
+    width: 29%;
     margin: 20px;
+    border-radius: 10px;
 }
 
 .footer-panel {
