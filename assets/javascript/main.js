@@ -4,17 +4,17 @@ $(document).ready(function () {
         {
             name: "Trivia Game",
             image: "assets/images/trivia-game.png",
-            url: "https://bunsushi.github.io/TriviaGame/index.html"
+            url: "https://bunsushi.github.io/TriviaGame"
         },
         {
             name: "You Have a Gambling Problem",
             image: "assets/images/gambling-problem.JPG",
-            url: "https://bunsushi.github.io/week-4-game"
+            url: "https://bunsushi.github.io/Gambling-Problem"
         },
         {
             name: "Get Spaced",
             image: "assets/images/get-spaced.JPG",
-            url: "https://bunsushi.github.io/Hangman-Game"
+            url: "https://bunsushi.github.io/Get-Spaced-Hangman"
         }]
 
     // GENERATE FEATURED PROJECTS

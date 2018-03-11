@@ -19,7 +19,21 @@ h2 {
 }
 
 p {
-    font-size: 13pt;
+    font-size: 14pt;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+button:hover {
+    color: #333;
+    background-color: #fbdf4b;
 }
 
 .yellow-font {
@@ -68,7 +82,6 @@ footer {
     padding: 40px;
     overflow: auto;
     border-bottom: 10px #fbdf4b solid;
-
 }
 
 #profile {
@@ -119,6 +132,15 @@ footer {
     width: 29%;
     margin: 20px;
     border-radius: 10px;
+}
+
+.more-portfolio {
+    font-size: 18px;
+    margin-top: 50px;
+    padding: 20px;
+    width: 20%;
+    border-radius: 40px;
+    border: 2px solid #000;
 }
 
 .footer-panel {
