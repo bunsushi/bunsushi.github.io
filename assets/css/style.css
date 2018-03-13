@@ -27,15 +27,6 @@ a {
     color: #333;
 }
 
-a:hover {
-    font-weight: bold;
-}
-
-button:hover {
-    color: #333;
-    background-color: #fbdf4b;
-}
-
 .yellow-font {
     color: #fbdf4b;
 }
@@ -74,6 +65,11 @@ button:hover {
 footer {
     padding: 50px;
     margin-top: 50px;
+}
+
+.footer-panel {
+    border: none;
+    text-align: center;
 }
 
 /* HOME */
@@ -120,6 +116,8 @@ footer {
     margin-top: 50px;
 }
 
+/* Featured Projects */
+
 #projects, #recent-projects {
     text-align: center;
 }
@@ -129,21 +127,64 @@ footer {
 }
 
 .featured-project {
-    width: 29%;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(33, 33, 33, .7);
+  }
+
+.project-container {
+    display: inline-block;
+    position: relative;
     margin: 20px;
-    border-radius: 10px;
+    width: 25%;
+  }
+  
+
+.project-container:hover .overlay {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+.project-title {
+    position: absolute;
+    color: #fff;
+    bottom: 0;
+}
+
+.project-title h3 {
+    font-size: 24px;
+    text-align: right;
+    font-weight: 700;
+    word-wrap: break-word;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    padding: 25px;
 }
 
 .more-portfolio {
+    background-color: #fbdf4b;
     font-size: 18px;
     margin-top: 50px;
     padding: 20px;
     width: 20%;
-    border-radius: 40px;
-    border: 2px solid #000;
+    border: 2px solid #fbdf4b;
 }
 
-.footer-panel {
-    border: none;
-    text-align: center;
+.more-portfolio:hover {
+    color: #333;
+    background-color: #fff;
+    border: 2px solid #000;
 }

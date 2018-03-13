@@ -3,7 +3,7 @@ $(document).ready(function () {
     var featuredProjects = [
         {
             name: "Trivia Game",
-            image: "assets/images/trivia-game.png",
+            image: "assets/images/trivia-game.JPG",
             url: "https://bunsushi.github.io/TriviaGame"
         },
         {
@@ -20,16 +20,29 @@ $(document).ready(function () {
     // GENERATE FEATURED PROJECTS
     function displayProjects() {
         for (var i = 0; i < featuredProjects.length; i++) {
-            var featuredProjectLink = $("<a>");
-            featuredProjectLink.attr("target", "_blank");
-            featuredProjectLink.attr("href", featuredProjects[i].url);
+            // var featuredProjectLink = $("<a>");
+            // featuredProjectLink.attr("target", "_blank");
+            // featuredProjectLink.attr("href", featuredProjects[i].url);
+            var projectContainer = $("<div>");
+            projectContainer.addClass("project-container");
 
             var displayFeaturedProjects = $("<img>");
             displayFeaturedProjects.addClass("featured-project");
             displayFeaturedProjects.attr("src", featuredProjects[i].image);
-            $(featuredProjectLink).append(displayFeaturedProjects);
-            $("#projects").append(featuredProjectLink);
-            $("#recent-projects").append(featuredProjectLink);
+
+            var overlay = $("<div>");
+            overlay.addClass("overlay");
+
+            var displayProjectTitle = $("<div>");
+            displayProjectTitle.addClass("project-title");
+            displayProjectTitle.html("<h3>" + featuredProjects[i].name);
+
+            $(overlay).append(displayProjectTitle);
+            $(projectContainer).append(displayFeaturedProjects);
+            $(projectContainer).append(overlay);
+
+            $("#projects").append(projectContainer);
+            $("#recent-projects").append(projectContainer);
         }
     }
 
