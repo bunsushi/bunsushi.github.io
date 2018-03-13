@@ -20,9 +20,10 @@ $(document).ready(function () {
     // GENERATE FEATURED PROJECTS
     function displayProjects() {
         for (var i = 0; i < featuredProjects.length; i++) {
-            // var featuredProjectLink = $("<a>");
-            // featuredProjectLink.attr("target", "_blank");
-            // featuredProjectLink.attr("href", featuredProjects[i].url);
+            var featuredProjectLink = $("<a>");
+            featuredProjectLink.attr("target", "_blank");
+            featuredProjectLink.attr("href", featuredProjects[i].url);
+
             var projectContainer = $("<div>");
             projectContainer.addClass("project-container");
 
@@ -41,7 +42,10 @@ $(document).ready(function () {
             $(projectContainer).append(displayFeaturedProjects);
             $(projectContainer).append(overlay);
 
-            $("#projects").append(projectContainer);
+            $(featuredProjectLink).append(projectContainer)
+
+            $("#projects").append(featuredProjectLink);
+            // $("#projects").append(projectContainer);
             $("#recent-projects").append(projectContainer);
         }
     }
