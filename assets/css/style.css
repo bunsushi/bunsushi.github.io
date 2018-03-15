@@ -120,12 +120,35 @@ footer {
 
 /* Featured Projects */
 
-#projects, #recent-projects {
+#projects {
     text-align: center;
+}
+
+#recent-projects {
+    display: block;
 }
 
 #featured {
     margin-top: 0;
+}
+
+.project-summary {
+    display: block;
+    margin: 20px;
+    border-bottom: 5px double #000;
+    min-height: 500px;
+    overflow: auto;
+    padding: 10px 0;
+}
+
+.project-summary:first-child {
+    border-top: 5px double #000;
+}
+
+.project-summary img {
+    width: 25%;
+    float: right;
+    margin-left: 20px;
 }
 
 .featured-project {
@@ -152,7 +175,6 @@ footer {
     margin: 20px;
     width: 25%;
   }
-  
 
 .project-container:hover .overlay {
     opacity: 1;
