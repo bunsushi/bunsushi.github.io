@@ -7,7 +7,7 @@ $(document).ready(function () {
             url: "https://bunsushi.github.io/Giphy-RXN",
             featured: false,
             tags: ["HTML5", "CSS3", "Bootstrap", "Javascript", "jQuery", "API", "Ajax"]
-        }
+        },
         {   
             name: "NYT Article Search",
             image: "assets/images/nyt-article-search.png",
