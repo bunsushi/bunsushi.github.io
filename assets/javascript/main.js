@@ -1,31 +1,42 @@
 $(document).ready(function () {
 
     var featuredProjects = [
+        {
+            name: "Giphy RXN",
+            image: "assets/images/giphy-rxn.png",
+            url: "https://bunsushi.github.io/Giphy-RXN",
+            featured: false,
+            tags: ["HTML5", "CSS3", "Bootstrap", "Javascript", "jQuery", "API", "Ajax"]
+        }
         {   
             name: "NYT Article Search",
-            image: "assets/images/nyt-article-search.JPG",
+            image: "assets/images/nyt-article-search.png",
             url: "https://bunsushi.github.io/NYT-Article-Search",
-            featured: false
+            featured: false,
+            tags: ["HTML5", "CSS3", "Bootstrap", "Javascript", "jQuery", "API", "Ajax"]
         },
         {
             name: "Trivia Game",
             image: "assets/images/trivia-game.JPG",
             url: "https://bunsushi.github.io/TriviaGame",
-            featured: true
+            featured: true,
+            tags: ["HTML5", "CSS3", "Bootstrap", "Javascript", "jQuery"]
         },
         {
             name: "You Have a Gambling Problem",
             image: "assets/images/gambling-problem.JPG",
             url: "https://bunsushi.github.io/Gambling-Problem",
-            featured: true
+            featured: true,
+            tags: ["HTML5", "CSS3", "Bootstrap", "Javascript", "jQuery"]
         },
         {
             name: "Get Spaced",
             image: "assets/images/get-spaced.JPG",
             url: "https://bunsushi.github.io/Get-Spaced-Hangman",
-            featured: true
+            featured: true,
+            tags: ["HTML5", "CSS3", "Bootstrap", "Javascript"]
         }]
-
+    
     // GENERATE FEATURED PROJECTS
     function displayProjects() {
         for (var i = 0; i < featuredProjects.length; i++) {
@@ -54,14 +65,15 @@ $(document).ready(function () {
             $(featuredProjectLink).append(projectContainer)
 
             $("#recent-projects").append(featuredProjectLink);
+            // $("#recent-projects").append(projectContainer);
 
             if (featuredProjects[i].featured === true) {
                 $("#projects").append(featuredProjectLink);
+                // $("#projects").append(projectContainer);
             }
         }
     }
 
     displayProjects();
-
 
 });
