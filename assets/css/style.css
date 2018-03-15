@@ -5,8 +5,8 @@ body {
     text-align: left;
     line-height: 2;
     letter-spacing: 1px;
-    background-image: url("../images/darkness.png");
-    /* background-color: #fbdf4b; */
+    /* background-image: url("../images/darkness.png"); */
+    background-color: #252b35;
     margin-top: 50px;
     position: relative;
 }
@@ -29,7 +29,7 @@ a {
 }
 
 .yellow-font {
-    color: #fbdf4b;
+    color: #c5632c;
 }
 
 /* NAVIGATION */
@@ -48,7 +48,7 @@ a {
 
 .navbar-default .navbar-nav>li>a:hover {
     font-weight: bold;
-    color: #fbdf4b;
+    color: #c5632c;
 }
 
 .navbar-brand p {
@@ -59,7 +59,7 @@ a {
 
 .navbar-default .navbar-nav .social>li>a:focus, .navbar-default .navbar-nav .social>li>a:hover {
     border: none;
-    color: #fbdf4b;
+    color: #c5632c;
 }
 
 /* FOOTER */
@@ -75,16 +75,17 @@ footer {
 
 /* HOME */
 .landing-page {
-    text-align: left;;
+    text-align: center;
     padding: 40px;
+    min-height: 80vh;
     overflow: auto;
-    border-bottom: 10px #fbdf4b solid;
+    border-bottom: 5px #c5632c solid;
 }
 
 #profile {
     border-radius: 50%;
-    border: 10px #fff solid;
-    width: 90%;
+    border: 5px #fff solid;
+    width: 80%;
 }
 
 #title-1 {
@@ -105,7 +106,7 @@ footer {
 }
 
 .yellow-panel{
-    background-color: #fbdf4b;
+    background-color: #c5632c;
     color: #333;
     padding-bottom: 50px;
     margin-top: 50px;
@@ -176,12 +177,12 @@ footer {
 }
 
 .more-portfolio {
-    background-color: #fbdf4b;
+    background-color: #c5632c;
     font-size: 18px;
     margin-top: 50px;
     padding: 20px;
     width: 200px;
-    border: 2px solid #fbdf4b;
+    border: 2px solid #c5632c;
 }
 
 .more-portfolio:hover {
