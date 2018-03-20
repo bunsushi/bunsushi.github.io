@@ -203,8 +203,9 @@ footer {
     font-size: 18px;
     margin-top: 50px;
     padding: 20px;
-    width: 200px;
+    min-width: 200px;
     border: 2px solid #c5632c;
+    text-transform: uppercase;
 }
 
 .more-portfolio:hover {

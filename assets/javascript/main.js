@@ -2,6 +2,14 @@ $(document).ready(function () {
 
     var featuredProjects = [
         {
+            name: "SEPTA Trolley Tracker",
+            image: "assets/images/trolley-tracker.png",
+            url: "https://bunsushi.github.io/SEPTA-Trolley-Tracker",
+            featured: false,
+            description: "SEPTA Trolley Tracker is my dream transit time table, where all the trolleys arrive at a predictable time. The route number reflects the trolley's frequency. Thus we can expect the #13 Trolley to arrive at a given station every 13 minutes.",
+            tags: ["HTML5", "CSS3", "Bootstrap", "Javascript", "jQuery", "Firebase", "NoSQL"]
+        },
+        {
             name: "Giphy RXN",
             image: "assets/images/giphy-rxn.png",
             url: "https://bunsushi.github.io/Giphy-RXN",
