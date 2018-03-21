@@ -1,5 +1,31 @@
 $(document).ready(function () {
 
+    $("#profile").hide();
+    $("#about").hide();
+    $("#featured").hide();
+    $("#contact").hide();
+    $("footer").hide();
+
+    $("#profile").each(function(i) {
+        if (this.complete) {
+            $(this).fadeIn(1000);
+        } else {
+            $(this).load(function() {
+                $(this).fadeIn(1000);
+            });
+        }
+    });
+
+    $(document).scroll(function() {
+        var y = $(this).scrollTop();
+        if (y > 100) {
+            $("#about").fadeIn(1000);
+        }
+        else {
+            $("#about").fadeOut(1000);
+        }
+    });
+
     var featuredProjects = [
         {
             name: "SEPTA Trolley Tracker",

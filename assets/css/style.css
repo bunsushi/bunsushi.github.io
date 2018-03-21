@@ -1,11 +1,10 @@
 /* GENERAL */
 body {
     font-family: 'Montserrat', sans-serif;
-    color: #333;
+    color: #0060FF;
     text-align: left;
     line-height: 2;
     letter-spacing: 1px;
-    /* background-image: url("../images/darkness.png"); */
     background-color: #252b35;
     margin-top: 50px;
     position: relative;
@@ -13,10 +12,15 @@ body {
 
 h2 {
     font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 15px;
     padding: 25px;
     text-align: center;
+}
+
+strong {
+    font-weight: 600;
 }
 
 p {
@@ -29,7 +33,7 @@ a {
 }
 
 .yellow-font {
-    color: #c5632c;
+    color: #FFAC00;
 }
 
 /* NAVIGATION */
@@ -48,7 +52,7 @@ a {
 
 .navbar-default .navbar-nav>li>a:hover {
     font-weight: bold;
-    color: #c5632c;
+    color: #CC672E;
 }
 
 .navbar-brand p {
@@ -59,7 +63,7 @@ a {
 
 .navbar-default .navbar-nav .social>li>a:focus, .navbar-default .navbar-nav .social>li>a:hover {
     border: none;
-    color: #c5632c;
+    color: #CC672E;
 }
 
 /* FOOTER */
@@ -77,9 +81,9 @@ footer {
 .landing-page {
     text-align: center;
     padding: 40px;
-    min-height: 80vh;
+    min-height: 100vh;
     overflow: auto;
-    border-bottom: 5px #c5632c solid;
+    border-bottom: 5px #CC672E solid;
 }
 
 #profile {
@@ -101,21 +105,26 @@ footer {
     background-color: #fff;
     padding: 25px;
     text-align: center;
-    font-weight: bold;
+    font-weight: 400;
     opacity: .98;
 }
 
 .yellow-panel{
-    background-color: #c5632c;
-    color: #333;
+    background-color: #FFAC00;
+    color: #222;
     padding-bottom: 50px;
     margin-top: 50px;
 }
 
 .white-panel {
     background-color: #fff;
-    color: #333;    padding-bottom: 50px;
+    color: #333;
+    padding-bottom: 50px;
     margin-top: 50px;
+}
+
+#glance {
+    padding: 0 50px 50px 50px;
 }
 
 /* Featured Projects */
@@ -199,12 +208,12 @@ footer {
 }
 
 .more-portfolio {
-    background-color: #c5632c;
+    background-color: #CC672E;
     font-size: 18px;
     margin-top: 50px;
     padding: 20px;
     min-width: 200px;
-    border: 2px solid #c5632c;
+    border: 2px solid #CC672E;
     text-transform: uppercase;
 }
 
