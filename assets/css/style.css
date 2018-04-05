@@ -14,8 +14,10 @@ h2 {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 15px;
-    padding: 25px 25px 25px 0;
+    padding: 25px 25px 10px 0;
     text-align: left;
+    /* border-bottom: 10px double #0060FF; */
+    margin-bottom: 50px;
 }
 
 strong {
@@ -24,7 +26,7 @@ strong {
 }
 
 p {
-    font-size: 14pt;
+    font-size: 12pt;
 }
 
 a {
@@ -46,17 +48,17 @@ a {
     background-color: #252b35;
     font-family: 'Josefin Sans', sans-serif;
     text-transform: uppercase;
-    border-bottom: none;
+    border-bottom: 2px solid #0060FF;
 }
 
 .navbar-default .navbar-nav>li>a {
+    font-weight: bold;
     color: #0060FF;
     letter-spacing: 3px;
 }
 
 .navbar-default .navbar-nav>li>a:hover {
-    font-weight: bold;
-    color: #0060FF;
+    color: #1970FF;
 }
 
 .navbar-brand p {
@@ -109,22 +111,39 @@ a {
 }
 
 .project-summary {
-    display: block;
-    margin: 20px;
-    border-bottom: 10px double #0060FF;
-    min-height: 500px;
+    background-color: rgb(255, 255, 255, .05);
+    display: inline-block;
+    width: 45%;
+    height: 850px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
     overflow: auto;
-    padding: 10px 0;
+    box-shadow: 15px 15px 15px rgba(33, 33, 33, .7);
+    border-radius: 15px;    
 }
 
-.project-summary:first-child {
-    border-top: 10px double #0060FF;
+.project-summary::nth-child {
+    margin-right: 0;
+}
+
+.project-summary:hover {
+    background-color: rgb(255, 255, 255, .1);
+    cursor: pointer;
+}
+
+.project-summary h3 {
+    font-weight: bold;
+}
+
+.project-summary p {
+    min-height: 100px;
 }
 
 .project-summary img {
-    width: 25%;
-    float: right;
-    margin-left: 20px;
+    width: 100%;
+    /* height: 40%; */
+    border-radius: 15px;
 }
 
 .featured-project {
@@ -175,18 +194,16 @@ a {
 }
 
 .more-portfolio {
-    background-color: #252b35;
+    background-color: transparent;
     color: #0060FF;
     font-size: 18px;
     margin-top: 50px;
     padding: 20px;
-    min-width: 200px;
     border: 2px solid #0060FF;
     text-transform: uppercase;
 }
 
 .more-portfolio:hover {
-    color: #fff;
-    background-color: #0060FF;
-    /* border: 2px solid #000; */
+    color: #1970FF;
+    border: 2px solid #1970FF;
 }
