@@ -18,7 +18,7 @@ $(document).ready(function () {
 
 var featuredProjects = [
     {
-        name: "The Mesobotamian",
+        name: "@mesobotamia",
         image: "assets/images/mesobotamia.png",
         url: "https://twitter.com/mesobotamia",
         repository: "https://github.com/bunsushi/Mesobotamia",

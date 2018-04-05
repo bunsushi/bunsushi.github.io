@@ -166,7 +166,12 @@ a {
 .project-container {
     display: inline-block;
     position: relative;
-    margin: 20px 0;
+    background-color: rgb(255, 255, 255, .05);
+    padding: 40px 20px;
+    overflow: auto;
+    box-shadow: 10px 10px 15px rgba(33, 33, 33, .7);
+    border-radius: 15px;    
+    margin-bottom: 30px;
     width: 100%;
     min-height: 80vh;
   }
