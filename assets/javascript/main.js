@@ -1,27 +1,36 @@
 $(document).ready(function () {
 
     // ATTN REWORK THIS CODE SO THAT DIV FADES IN ONCE YOU HIT IT.
-    $(window).scroll(function() {
-        var windowBottom = $(this).scrollTop() + $(this).innerHeight();
-        $(".hideme").each(function() {
-          /* Check the location of each desired element */
-        var objectBottom = $(this).offset().top;
+    // $(window).scroll(function() {
+    //     var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+    //     $(".hideme").each(function() {
+    //       /* Check the location of each desired element */
+    //     var objectBottom = $(this).offset().top;
 
-          /* If the element is within bounds of the window, fade it in */
-          if (objectBottom < windowBottom) { //object comes into view (scrolling down)
-            if ($(this).css("opacity")==0) {$(this).fadeTo(800, 1);}
-          } else { //object goes out of view (scrolling up)
-            if ($(this).css("opacity")==1) {$(this).fadeTo(800, 0);}
-          }
-        });
-      }).scroll(); //invoke scroll-handler on page-load
+    //       /* If the element is within bounds of the window, fade it in */
+    //       if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+    //         if ($(this).css("opacity")==0) {$(this).fadeTo(800, 1);}
+    //       } else { //object goes out of view (scrolling up)
+    //         if ($(this).css("opacity")==1) {$(this).fadeTo(800, 0);}
+    //       }
+    //     });
+    //   }).scroll(); //invoke scroll-handler on page-load
 
 var featuredProjects = [
     {
+        name: "The Mesobotamian",
+        image: "assets/images/mesobotamia.png",
+        url: "https://twitter.com/mesobotamia",
+        repository: "https://github.com/bunsushi/Mesobotamia",
+        featured: true,
+        description: "A Twitter bot: esoteric wisdom and questionable advice from your friendly neighborhood Sumerian.",
+        tags: ["JavaScript", "jQuery", "Node.js", "Twitter API"]
+    },
+    {
         name: "Cinemapp.r",
         image: "assets/images/cinemappr.png",
-        url: "https://bunsushi.github.io/Cinemappr",
-        repository: "https://cinemappr.herokuapp.com",
+        url: "https://cinemappr.herokuapp.com",
+        repository: "https://github.com/bunsushi/Cinemappr",
         featured: true,
         description: "An interactive movie theater location and showtime listing application integrated with Google Maps.",
         tags: ["HTML/CSS", "Bootstrap", "JavaScript", "jQuery", "Node.js", "Express", "Sass", "Google Maps API", "Gracenote API"]
@@ -30,7 +39,7 @@ var featuredProjects = [
         name: "SEPTA Trolley Tracker",
         image: "assets/images/trolley-tracker.png",
         url: "https://bunsushi.github.io/SEPTA-Trolley-Tracker",
-        repository: "https://github.com/bunsushi/SEPTA-Trolley-Tradker",
+        repository: "https://github.com/bunsushi/SEPTA-Trolley-Tracker",
         featured: false,
         description: "SEPTA Trolley Tracker is my dream transit time table, where all the trolleys arrive at a predictable time.",
         tags: ["HTML/CSS", "Bootstrap", "JavaScript", "jQuery", "Firebase", "NoSQL"]
@@ -88,28 +97,51 @@ function displayFeaturedProjects() {
         featuredProjectLink.attr("target", "_blank");
         featuredProjectLink.attr("href", featuredProjects[i].url);
 
+        var githubLink = $("<a>");
+        githubLink.attr("target", "_blank");
+        githubLink.attr("href", featuredProjects[i].repository);
+
         var projectContainer = $("<div>");
         projectContainer.addClass("project-container");
+        var highlight = $("<div class='row highlight'>");
+
+        var highlightImage = $("<div class='col-md-7'>");
+        var highlightTitle = $("<div class='col-md-5 highlight-child'>");
 
         var displayFeaturedProjects = $("<img>");
-        displayFeaturedProjects.addClass("featured-project");
         displayFeaturedProjects.attr("src", featuredProjects[i].image);
+        displayFeaturedProjects.addClass("pull-left");
+        highlightImage.append(displayFeaturedProjects);
+        highlight.append(highlightImage);
 
-        var overlay = $("<div>");
-        overlay.addClass("overlay");
+        var projectTitle = $("<h2>");
+        projectTitle.text(featuredProjects[i].name);
+        highlightTitle.append(projectTitle);
+        highlight.append(highlightTitle);
 
-        var displayProjectTitle = $("<div>");
-        displayProjectTitle.addClass("project-title");
-        displayProjectTitle.html("<h3>" + featuredProjects[i].name);
+        var projectDescription = $("<div>");
+        projectDescription.append("<p>" + featuredProjects[i].description);
 
-        $(overlay).append(displayProjectTitle);
-        $(projectContainer).append(displayFeaturedProjects);
-        $(projectContainer).append(overlay);
+        var deployedButton = $("<button>");
+        deployedButton.html("Demo <span class='glyphicon glyphicon-arrow-right'>");
+        deployedButton.addClass("more-portfolio");
+        $(featuredProjectLink).append(deployedButton);
 
-        $(featuredProjectLink).append(projectContainer)
+        var codeButton = $("<button>");
+        codeButton.html("Code <span class='glyphicon glyphicon-arrow-right'>");
+        codeButton.addClass("more-portfolio");
+        $(githubLink).append(codeButton);
+
+        projectContainer.append(highlight);
+
+        // $(projectContainer).append(displayFeaturedProjects);
+        // $(projectContainer).append(projectTitle);        
+        $(projectContainer).append(projectDescription);
+        $(projectContainer).append(featuredProjectLink);
+        $(projectContainer).append(githubLink);
 
         if (featuredProjects[i].featured === true) {
-            $("#projects").append(featuredProjectLink);
+            $("#projects").append(projectContainer);
         }
     }
 }
@@ -120,6 +152,10 @@ function displayOtherProjects() {
         var featuredProjectLink = $("<a>");
         featuredProjectLink.attr("target", "_blank");
         featuredProjectLink.attr("href", featuredProjects[i].url);
+
+        var githubLink = $("<a>");
+        githubLink.attr("target", "_blank");
+        githubLink.attr("href", featuredProjects[i].repository);
 
         var projectContainer = $("<div>");
         projectContainer.addClass("project-summary");
@@ -138,17 +174,27 @@ function displayOtherProjects() {
         deployedButton.addClass("more-portfolio");
         $(featuredProjectLink).append(deployedButton);
 
+        var codeButton = $("<button>");
+        codeButton.html("Code <span class='glyphicon glyphicon-arrow-right'>");
+        codeButton.addClass("more-portfolio");
+        $(githubLink).append(codeButton);
+
 
         $(projectContainer).append(displayFeaturedProjects);
         $(projectContainer).append(projectTitle);        
         $(projectContainer).append(projectDescription);
         $(projectContainer).append(featuredProjectLink);
+        $(projectContainer).append(githubLink);
 
         if (featuredProjects[i].featured === false) {
             $("#other-projects").append(projectContainer);
         }
 
     }
+}
+
+function generateProjectInfo() {
+    
 }
 
 displayFeaturedProjects();
