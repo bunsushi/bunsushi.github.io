@@ -26,7 +26,7 @@
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
+        <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
@@ -37,8 +37,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="index.html">
-                    <p>
-                        <i class="fas fa-code"></i> Tegan Bunsu Ashby</p>
+                    <p>Tegan Bunsu Ashby</p>
                 </a>
             </div>
 
@@ -46,10 +45,10 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="#featured">Portfolio</a>
+                        <a href="#about">About</a>
                     </li>
                     <li>
-                        <a href="#about">About</a>
+                        <a href="#featured">Portfolio</a>
                     </li>
                     <li>
                         <a href="#contact">Contact</a>
@@ -76,81 +75,101 @@
 
     <!-- Main body content -->
     <section class="landing-page">
-        <div class="container">
+        <div id="center">
             <div class="row">
-                <div class="col-md-6">
-                    <img src="assets/images/teganbunsuashby.jpg" id="profile" alt="Tegan Bunsu Ashby">
-                </div>
-                <div class="col-md-6">
-                    <div>
-                        <h2 id="title-1">Hi, I'm Tegan</h2>
-                        <h4 id="title-2">Software Developer</h4>
-                        <h4>
+                <div class="col-md-12">
+                    <div class="hello">
+                        <h1 id="title-1">Hi, I'm Tegan Bunsu Ashby</h1>
+                        <h3 id="title-2">Software Developer //
+                            <span>
+                                <i class="fas fa-map-marker-alt"></i>
+                            </span> Philadelphia, PA</h3>
+                    </div>
+                    <!-- <h3>
                             <span class="yellow-font">
                                 <i class="fas fa-map-marker-alt fa-lg"></i>
-                            </span> Philadelphia, PA</h4>
-                    </div>
+                            </span> Philadelphia, PA</h4> -->
+                    <!-- </div> -->
                 </div>
             </div>
+        </div>
     </section>
 
     <section class="hideme" id="about">
-        <div class="container">
-            <div class="col-md-12">
-                <h2 id="about">// Elevator Pitch</h2>
-                <p>I'm a user-oriented
-                    <strong>full-stack developer</strong>. I build elegant, fully scalable databases and the beautiful, snappy user
-                    interfaces to do them justice. I have a passion for [lorem ipsum Cicero swishero and I don't like talking
-                    about myself].
-                </p>
-                <p>I studied formal linguistics and ancient Near Eastern languages at the University of Pennsylvania.</p>
-                <!-- <p>[A little bit about my linguistics background (syntax), interest in machine learning and AI. Talk about academic
-                    editor]
-                </p> -->
-                <!-- <p>I also speak natural languages! I'm conversational in
-                    French, Spanish, Dutch, and
-                    German. I can read the ancient languages
-                    Sumerian, Akkadian, Sanskrit, and
-                    Hittite.</p> -->
-                <p>When I'm not coding, you'll find me knitting or running, but almost never at the same time.</p>
-
+        <div class="container-fluid">
+            <div class="col-md-8">
+                <h1 id="elevator-pitch">// Elevator Pitch</h1>
+                <div id="talkbubble">
+                    <p>I'm a user-oriented
+                        <strong>full-stack developer</strong>. I build elegant, fully scalable databases and the beautiful, snappy
+                        user interfaces to do them justice. I'm interested in
+                        <strong>machine learning</strong>,
+                        <strong>computational linguistics</strong>, and
+                        <strong>big data visualization and manipulation</strong>.
+                    </p>
+                    <p>I studied formal linguistics and ancient Near Eastern languages at the University of Pennsylvania.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <img src="assets/images/teganbunsuashby-color.JPG" id="profile">
             </div>
         </div>
     </section>
 
     <section class="hideme" id="glance">
-        <div class="container">
+        <div class="container-fluid">
             <div class="col-md-12">
-                <h2>// At a Glance</h2>
+                <h1>// At a Glance</h1>
                 <div class="row">
                     <div class="col-md-4">
-                        <h3>Current Stack:</h3>
+                        <h3>Languages</h3>
                         <ul>
-                            <li><strong>MERN (MongoDB, Express, React, and Node.js)</strong></li>
-                        </ul>
-                        <h3>Fluent in:</h3>
-                        <ul>
-                            <li><strong>JavaScript (ES5/6)</strong></li>
-                            <li><strong>jQuery</strong></li>
-                            <li><strong>MySQL</strong></li>
-                            <li><strong>HTML/CSS/Sass</strong></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4">
-                        <h3>Comfortable with:</h3>
-                        <ul>
-                            <li><strong>Python</strong></li>
-                            <li><strong>Java</strong></li>
-                            <li><strong>PHP</strong></li>
-                            <li><strong>Wordpress</strong></li>
+                            <li>
+                                <strong>Python</strong>
+                            </li>
+                            <li>
+                                <strong>Java</strong>
+                            </li>
+                            <li>
+                                <strong>SQL</strong>
+                            </li>
+                            <li>
+                                <strong>JavaScript (ES5/6)</strong>
+                            </li>
+                            <li>
+                                <strong>HTML5/CSS3</strong>
+                            </li>
                         </ul>
                     </div>
                     <div class="col-md-4">
-                        <h3>Experienced in:</h3>
+                        <h3>Front-End</h3>
                         <ul>
-                            <li><strong>Adobe InDesign, Illustrator, and Photoshop</strong></li>
-                            <li><strong>Git version control</strong></li>
-                            <li><strong>wireframing/prototyping</strong> in-browser and with Balsamiq</li>
+                            <li>
+                                <strong>React</strong>
+                            </li>
+                            <li>
+                                <strong>jQuery</strong>
+                            </li>
+                            <li>
+                                <strong>Sass</strong>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Back-End</h3>
+                        <ul>
+                            <li>
+                                <strong>MongoDB</strong>
+                            </li>
+                            <li>
+                                <strong>Express</strong>
+                            </li>
+                            <li>
+                                <strong>Node.js</strong>
+                            </li>
+                            <li>
+                                <strong>MySQL</strong>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -160,23 +179,24 @@
     </section>
 
     <section class="hideme" id="featured">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2>// Featured Projects</h2>
-                    <div id="projects"></div>
-                    </a>
+        <div class="container-fluid">
+            <div class="featured-content">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>// Featured Projects</h1>
+                        <div id="projects"></div>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
         </div>
     </section>
 
     <section class="hideme" id="other">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
-                    <h2>// Other Projects</h2>
+                    <h1>// Other Projects</h1>
                     <div id="other-projects"></div>
                     <div class="text-center">
                         </a>
@@ -187,12 +207,14 @@
     </section>
 
     <section class="hideme" id="contact">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
-                    <h2 id="contact">// Contact</h2>
+                    <h1>// Contact</h1>
                     <p>I am periodically available for freelance work. If you have a project in mind, drop me a line and a short
-                        description.</p>
+                        description.
+                    </p>
+                    <p>Form goes here</p>
                 </div>
             </div>
         </div>

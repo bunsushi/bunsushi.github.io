@@ -22,7 +22,7 @@ var featuredProjects = [
         image: "assets/images/mesobotamia.png",
         url: "https://twitter.com/mesobotamia",
         repository: "https://github.com/bunsushi/Mesobotamia",
-        featured: true,
+        featured: false,
         description: "A Twitter bot: esoteric wisdom and questionable advice from your friendly neighborhood Sumerian.",
         tags: ["JavaScript", "jQuery", "Node.js", "Twitter API"]
     },
@@ -38,6 +38,7 @@ var featuredProjects = [
     {
         name: "SEPTA Trolley Tracker",
         image: "assets/images/trolley-tracker.png",
+        square_image: "assets/images/trolley-tracker-square.png",
         url: "https://bunsushi.github.io/SEPTA-Trolley-Tracker",
         repository: "https://github.com/bunsushi/SEPTA-Trolley-Tracker",
         featured: false,
@@ -48,6 +49,7 @@ var featuredProjects = [
         name: "Giphy RXN",
         image: "assets/images/giphy-rxn.png",
         url: "https://bunsushi.github.io/Giphy-RXN",
+        square_image: "assets/images/giphy-rxn-square.png",        
         repository: "https://github.com/bunsushi/Giphy-RXN",
         featured: false,
         description: "Giphy RXN is a simple search tool for discovering gifs using the Giphy API.",
@@ -56,6 +58,7 @@ var featuredProjects = [
     {
         name: "NYT Article Search",
         image: "assets/images/nyt-article-search.png",
+        square_image: "assets/images/nyt-article-search-square.png",        
         url: "https://bunsushi.github.io/NYT-Article-Search",
         repository: "https://github.com/bunsushi/NYT-Article-Search",
         featured: false,
@@ -65,6 +68,7 @@ var featuredProjects = [
     {
         name: "Trivia Game",
         image: "assets/images/trivia-game.png",
+        square_image: "assets/images/trivia-game-square.JPG",        
         url: "https://bunsushi.github.io/TriviaGame",
         repository: "https://github.com/bunsushi/TriviaGame",
         featured: false,
@@ -74,6 +78,7 @@ var featuredProjects = [
     {
         name: "You Have a Gambling Problem",
         image: "assets/images/gambling-problem.png",
+        square_image: "assets/images/gambling-problem-square.JPG",        
         url: "https://bunsushi.github.io/Gambling-Problem",
         repository: "https://github.com/bunsushi/Gambling-Problem",
         featured: false,
@@ -83,6 +88,7 @@ var featuredProjects = [
     {
         name: "Get Spaced",
         image: "assets/images/get-spaced.png",
+        square_image: "assets/images/get-spaced-square.JPG",        
         url: "https://bunsushi.github.io/Get-Spaced-Hangman",
         repository: "https://github.com/bunsushi/Get-Spaced-Hangman",
         featured: false,
@@ -114,10 +120,8 @@ function displayFeaturedProjects() {
         highlightImage.append(displayFeaturedProjects);
         highlight.append(highlightImage);
 
-        var projectTitle = $("<h2>");
+        var projectTitle = $("<h1>");
         projectTitle.text(featuredProjects[i].name);
-        highlightTitle.append(projectTitle);
-        highlight.append(highlightTitle);
 
         var projectDescription = $("<div>");
         projectDescription.append("<p>" + featuredProjects[i].description);
@@ -132,13 +136,13 @@ function displayFeaturedProjects() {
         codeButton.addClass("more-portfolio");
         $(githubLink).append(codeButton);
 
-        projectContainer.append(highlight);
+        highlightTitle.append(projectTitle);
+        highlightTitle.append(projectDescription);
+        highlightTitle.append(featuredProjectLink);
+        highlightTitle.append(githubLink);
+        highlight.append(highlightTitle);
 
-        // $(projectContainer).append(displayFeaturedProjects);
-        // $(projectContainer).append(projectTitle);        
-        $(projectContainer).append(projectDescription);
-        $(projectContainer).append(featuredProjectLink);
-        $(projectContainer).append(githubLink);
+        projectContainer.append(highlight);
 
         if (featuredProjects[i].featured === true) {
             $("#projects").append(projectContainer);
@@ -163,28 +167,24 @@ function displayOtherProjects() {
         var projectTitle = $("<h3>");
         projectTitle.text(featuredProjects[i].name);
 
-        var projectDescription = $("<div>");
-        projectDescription.append("<p>" + featuredProjects[i].description);
-
         var displayFeaturedProjects = $("<img>");
-        displayFeaturedProjects.attr("src", featuredProjects[i].image);
+        displayFeaturedProjects.attr("src", featuredProjects[i].square_image);
 
-        var deployedButton = $("<button>");
-        deployedButton.html("Demo <span class='glyphicon glyphicon-arrow-right'>");
-        deployedButton.addClass("more-portfolio");
-        $(featuredProjectLink).append(deployedButton);
+        // var deployedButton = $("<button>");
+        // deployedButton.html("Demo <span class='glyphicon glyphicon-arrow-right'>");
+        // deployedButton.addClass("more-portfolio");
+        // $(featuredProjectLink).append(deployedButton);
 
         var codeButton = $("<button>");
         codeButton.html("Code <span class='glyphicon glyphicon-arrow-right'>");
         codeButton.addClass("more-portfolio");
         $(githubLink).append(codeButton);
 
-
-        $(projectContainer).append(displayFeaturedProjects);
-        $(projectContainer).append(projectTitle);        
-        $(projectContainer).append(projectDescription);
-        $(projectContainer).append(featuredProjectLink);
-        $(projectContainer).append(githubLink);
+        $(featuredProjectLink).append(displayFeaturedProjects);
+        $(featuredProjectLink).append(projectTitle);
+        $(projectContainer).append(featuredProjectLink);                        
+        // $(projectContainer).append(featuredProjectLink);
+        // $(projectContainer).append(githubLink);
 
         if (featuredProjects[i].featured === false) {
             $("#other-projects").append(projectContainer);
