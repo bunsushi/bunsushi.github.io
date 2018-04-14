@@ -49,7 +49,7 @@ a {
 /* NAVIGATION */
 .navbar {
     margin-bottom: 50px;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.15);
     font-family: 'Josefin Sans', sans-serif;
     text-transform: uppercase;
     border-bottom: none;
@@ -84,7 +84,7 @@ a {
     padding: 40px;
     min-height: 50vh;
     position: relative;
-    transform: matrix(1, -0.15, 0, 1, 0, 0); /* Standard syntax */
+    transform: matrix(1, -0.1, 0, 1, 0, 0); /* Standard syntax */
     z-index: -1;
 }
 
@@ -116,12 +116,13 @@ a {
 
 #talkbubble {
     padding: 30px;
-    background: #f7f7f8;
+    background: #EEEEEF;
     position: relative;
     -moz-border-radius:    10px;
     -webkit-border-radius: 10px;
     border-radius:         10px;
     transform: matrix(1, -0.02, 0, 1, 0, 0); /* Standard syntax */
+
  }
  #talkbubble:before {
     content:"";
@@ -131,7 +132,7 @@ a {
     width: 0;
     height: 0;
     /* border-top: 5px solid transparent; */
-    border-left: 50px solid #f7f7f8;
+    border-left: 50px solid #EEEEEF;
     border-bottom: 30px solid transparent;
  }
 
@@ -140,12 +141,12 @@ a {
     border: 5px #fff solid;
     width: 90%;
     position: absolute;
-    top: 60%;
-    transform: translateY(-60%);
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 #title-1 {
-    font-size: 2.5em;
+    font-size: 3em;
     letter-spacing: 5px;
     font-weight: 700;
 }
@@ -178,7 +179,8 @@ a {
 .project-summary {
     background-color: #fff;
     display: inline-block;
-    width: 30%;
+    width: 29%;
+    min-height: 425px;
     overflow: auto;
     margin-right: 50px;
     margin-bottom: 50px;
