@@ -18,8 +18,18 @@ $(document).ready(function () {
 
 var featuredProjects = [
     {
+        name: "Hey LIRI",
+        image: "assets/images/hey-liri-square.png",
+        square_image: "assets/images/hey-liri-square.png",
+        repository: "https://github.com/bunsushi/hey-LIRI",
+        featured: false,
+        description: "A simple command-line application.",
+        tags: ["Node.js", "Twitter API", "Spotify API"]
+    },
+    {
         name: "@mesobotamia",
-        image: "assets/images/mesobotamia.png",
+        image: "assets/images/mesobotamia-square.png",
+        square_image: "assets/images/mesobotamia-square.png",
         url: "https://twitter.com/mesobotamia",
         repository: "https://github.com/bunsushi/Mesobotamia",
         featured: false,

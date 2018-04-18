@@ -184,6 +184,7 @@ a {
     overflow: auto;
     margin-right: 50px;
     margin-bottom: 50px;
+    border: 2px solid #EEEEEF;
 }
 
 .project-summary:hover {
