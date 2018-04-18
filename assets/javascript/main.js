@@ -21,6 +21,7 @@ var featuredProjects = [
         name: "Hey LIRI",
         image: "assets/images/hey-liri-square.png",
         square_image: "assets/images/hey-liri-square.png",
+        url: "https://github.com/bunsushi/hey-LIRI",
         repository: "https://github.com/bunsushi/hey-LIRI",
         featured: false,
         description: "A simple command-line application.",
