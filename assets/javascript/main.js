@@ -18,6 +18,16 @@ $(document).ready(function () {
 
 var featuredProjects = [
     {
+        name: "Bash Boutique",
+        image: "assets/images/bash-boutique-square.png",
+        square_image: "assets/images/bash-boutique-square.png",
+        url: "https://github.com/bunsushi/bash-boutique",
+        repository: "https://github/bunsushi/bash-boutique",
+        featured: false,
+        description: "A CLI shop simulator.",
+        tags: ["Node.js", "MySQL"]
+    },
+    {
         name: "Hey LIRI",
         image: "assets/images/hey-liri-square.png",
         square_image: "assets/images/hey-liri-square.png",
