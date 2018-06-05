@@ -39,11 +39,31 @@ $('a[href*="#"]')
 
 var featuredProjects = [
     {
+        name: "sadhana",
+        image: "assets/images/gplaypattern.png",
+        square_image: "assets/images/gplaypattern.png",
+        url: "https://mysadhana.herokuapp.com",
+        repository: "https://github.com/bunsushi/sadhana",
+        featured: true,
+        description: "A daily practice journal to help you achieve your goals.",
+        tags: ["Express.js, Node.js, MySQL"]
+    },
+    {
+        name: "Pie a la Node",
+        image: "assets/images/pie-a-la-node.png",
+        square_image: "assets/images/pie-a-la-node-square.png",
+        url: "https://piealanode.herokuapp.com",
+        repository: "https://github.com/bunsushi/pie-a-la-node",
+        featured: false,
+        description: "DIY pie menu generator with MySQL.",
+        tags: ["Express.js, Node.js, MySQL"]
+    },
+    {
         name: "Bash Boutique",
         image: "assets/images/bash-boutique-square.png",
         square_image: "assets/images/bash-boutique-square.png",
         url: "https://github.com/bunsushi/bash-boutique",
-        repository: "https://github/bunsushi/bash-boutique",
+        repository: "https://github.com/bunsushi/bash-boutique",
         featured: false,
         description: "A CLI shop simulator.",
         tags: ["Node.js", "MySQL"]
