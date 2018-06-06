@@ -20,8 +20,8 @@ $('a[href*="#"]')
             // Only prevent default if animation is actually gonna happen
             event.preventDefault();
             $('html, body').animate({
-                scrollTop: target.offset().top - 100
-            }, 600, function () {
+                scrollTop: target.offset().top - 50
+            }, 1000, function () {
                 // Callback after animation
                 // Must change focus!
                 var $target = $(target);
@@ -226,8 +226,8 @@ function displayOtherProjects() {
         var projectContainer = $("<div>");
         projectContainer.addClass("project-summary");
 
-        var projectTitle = $("<h3>");
-        projectTitle.text(featuredProjects[i].name);
+        // var projectTitle = $("<h3>");
+        // projectTitle.text(featuredProjects[i].name);
 
         var displayFeaturedProjects = $("<img>");
         displayFeaturedProjects.attr("src", featuredProjects[i].square_image);
@@ -243,7 +243,7 @@ function displayOtherProjects() {
         $(githubLink).append(codeButton);
 
         $(featuredProjectLink).append(displayFeaturedProjects);
-        $(featuredProjectLink).append(projectTitle);
+        // $(featuredProjectLink).append(projectTitle);
         $(projectContainer).append(featuredProjectLink);                        
         // $(projectContainer).append(featuredProjectLink);
         // $(projectContainer).append(githubLink);
