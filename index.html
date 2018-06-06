@@ -13,7 +13,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700|Montserrat:400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700|Playfair+Display:400,700,900" rel="stylesheet">
     <!-- Font Awesome -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <!-- Bootstrap Javascript and jQuery library -->
@@ -27,7 +27,7 @@
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
+        <div class="container-navbar">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
@@ -37,9 +37,9 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">
-                    <p>Tegan Bunsu Ashby</p>
-                </a>
+                <!-- <a class="navbar-brand" href="#">
+                    <img alt="Brand" src="assets/images/kandinsky-abstract.svg" id="brand"> Tegan Bunsu Ashby
+                </a> -->
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -60,7 +60,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="https://www.linkedin.com/in/teganbunsuashby">
                             <i class="fab fa-linkedin-in fa-lg"></i>
                         </a>
                     </li>
@@ -76,43 +76,40 @@
 
     <!-- Main body content -->
     <section class="landing-page">
-        <div id="center">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="hello">
-                        <h1 id="title-1">Hi, I'm Tegan Bunsu Ashby</h1>
-                        <h3 id="title-2">Software Developer //
-                            <span>
-                                <i class="fas fa-map-marker-alt"></i>
-                            </span> Philadelphia, PA</h3>
-                    </div>
-                    <!-- <h3>
-                            <span class="yellow-font">
-                                <i class="fas fa-map-marker-alt fa-lg"></i>
-                            </span> Philadelphia, PA</h4> -->
-                    <!-- </div> -->
-                </div>
-            </div>
+        <div class="center">
+            <img src="assets/images/kandinsky-brand.svg" alt="Tegan Bunsu Ashby" id="brand">
+            <h1 id="brand-name">Tegan Bunsu Ashby</h1>
+            <!-- <div class="row">
+                <div class="col-md-12"> -->
+            <!-- <div class="hello">
+                <h1 id="title-1">Hi, I'm Tegan Bunsu Ashby</h1>
+                <h3 id="title-2">Software Developer //
+                    <span>
+                        <i class="fas fa-map-marker-alt"></i>
+                    </span> Philadelphia, PA</h3>
+            </div> -->
         </div>
     </section>
 
     <section class="hideme" id="about">
         <div class="container-fluid">
-            <div class="col-md-8">
-                <h1 id="elevator-pitch">// Elevator Pitch</h1>
-                <div id="talkbubble">
-                    <p>I'm a user-oriented
-                        <strong>full-stack developer</strong>. I build elegant, fully scalable databases and the beautiful, snappy
-                        user interfaces to do them justice. I'm interested in
+            <div class="row">
+                <div class="col-md-8">
+                    <h1 id="elevator-pitch">// Elevator Pitch</h1>
+                    <p>I'm a human-oriented
+                        <strong>full-stack developer</strong>. I like to build web applications driven by data. I'm interested in
                         <strong>machine learning</strong>,
                         <strong>computational linguistics</strong>, and
                         <strong>big data visualization and manipulation</strong>.
                     </p>
                     <p>I studied formal linguistics and ancient Near Eastern languages at the University of Pennsylvania.</p>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <img src="assets/images/teganbunsuashby-color.jpg" id="profile">
+                <div class="col-md-4">
+                    <img src="assets/images/teganbunsuashby-color.jpg" id="profile">
+
+                    <div id="triangle">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -212,10 +209,39 @@
             <div class="row">
                 <div class="col-md-12">
                     <h1>// Contact</h1>
-                    <p>I am periodically available for freelance work. If you have a project in mind, drop me a line and a short
-                        description.
+                    <p>Check out my open source work on GitHub and connect with me on LinkedIn</p>
+                    <ul>
+                        <li>
+                            <a href="https://github.com/bunsushi">
+                                <i class="fab fa-github fa-lg"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/teganbunsuashby">
+                                <i class="fab fa-linkedin-in fa-lg"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <p>I am periodically available for freelance work. If you have a project in mind, drop me a line with a
+                        time frame, budget, and a short description.
                     </p>
-                    <p>Form goes here</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8">
+
+                </div>
+                <div class="col-md-4">
+                    <p>This web page was built with GitHub Pages, a dash of Bootstrap, a pinch of Sass, and a generous helping
+                        of Javascript for the magic touch.</p>
+                    <p>The design was inspired by Wassily Kandinsky's musical paintings. The favicon is by Danil Polshin for
+                        the Noun Project.</p>
+                    <p>&copy 2018 Tegan Bunsu Ashby</p>
                 </div>
             </div>
         </div>
