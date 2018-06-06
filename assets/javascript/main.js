@@ -219,34 +219,25 @@ function displayOtherProjects() {
         featuredProjectLink.attr("target", "_blank");
         featuredProjectLink.attr("href", featuredProjects[i].url);
 
-        var githubLink = $("<a>");
-        githubLink.attr("target", "_blank");
-        githubLink.attr("href", featuredProjects[i].repository);
-
         var projectContainer = $("<div>");
         projectContainer.addClass("project-summary");
 
-        // var projectTitle = $("<h3>");
-        // projectTitle.text(featuredProjects[i].name);
-
         var displayFeaturedProjects = $("<img>");
+        displayFeaturedProjects.addClass("featured-project");
         displayFeaturedProjects.attr("src", featuredProjects[i].square_image);
 
-        // var deployedButton = $("<button>");
-        // deployedButton.html("Demo <span class='glyphicon glyphicon-arrow-right'>");
-        // deployedButton.addClass("more-portfolio");
-        // $(featuredProjectLink).append(deployedButton);
+        var overlay = $("<div>");
+        overlay.addClass("overlay");
 
-        var codeButton = $("<button>");
-        codeButton.html("Code <span class='glyphicon glyphicon-arrow-right'>");
-        codeButton.addClass("more-portfolio");
-        $(githubLink).append(codeButton);
+        var displayProjectTitle = $("<div>");
+        displayProjectTitle.addClass("project-title");
+        displayProjectTitle.html("<h4>" + featuredProjects[i].name);
 
-        $(featuredProjectLink).append(displayFeaturedProjects);
-        // $(featuredProjectLink).append(projectTitle);
-        $(projectContainer).append(featuredProjectLink);                        
-        // $(projectContainer).append(featuredProjectLink);
-        // $(projectContainer).append(githubLink);
+        $(overlay).append(displayFeaturedProjects);
+        $(overlay).append(displayProjectTitle);
+        $(projectContainer).append(overlay);
+
+        $(featuredProjectLink).append(projectContainer)
 
         if (featuredProjects[i].featured === false) {
             $("#other-projects").append(projectContainer);

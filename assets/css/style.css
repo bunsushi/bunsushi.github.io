@@ -188,18 +188,6 @@ a {
   width: 100%;
   height: auto; }
 
-.project-container {
-  display: inline-block;
-  position: relative;
-  background-color: rgba(255, 255, 255, 0.05);
-  padding: 40px 20px;
-  overflow: auto;
-  box-shadow: 10px 10px 15px rgba(33, 33, 33, 0.7);
-  border-radius: 15px;
-  margin-bottom: 30px;
-  width: 100%;
-  /* min-height: 80vh; */ }
-
 .highlight {
   position: relative;
   margin-bottom: 50px; }
@@ -240,42 +228,6 @@ a {
   letter-spacing: 10px;
   padding: 25px; }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 300px;
-  width: 300px;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: rgba(33, 33, 33, 0.7); }
-
-.project-summary {
-  background-color: #fff;
-  display: inline-block;
-  width: 20%;
-  overflow: auto;
-  border: 2px solid #EEEEEF; }
-
-.project-summary img {
-  width: 100%; }
-
-.project-summary img:hover {
-  cursor: pointer;
-  transform: scale(1.1);
-  transition: all 1s; }
-
-.project-summary h3 {
-  font-weight: bold;
-  padding: 20px;
-  text-align: center;
-  color: #FFB91F; }
-
-.project-summary p {
-  min-height: 100px; }
-
 .more-portfolio {
   background-color: #FFB91F;
   color: #fff;
@@ -286,6 +238,50 @@ a {
   padding: 20px;
   border: 2px solid #FFB91F;
   text-transform: uppercase; }
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  overflow: hidden; }
+
+.project-summary:nth-of-type(3n) .overlay {
+  background-color: #FFB91F; }
+
+.project-summary:nth-of-type(3n+1) .overlay {
+  background-color: #007866; }
+
+.project-summary:nth-of-type(3n+2) .overlay {
+  background-color: #333; }
+
+.overlay img {
+  max-width: 100%;
+  opacity: .5; }
+
+.overlay h4 {
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  color: #fff; }
+
+.overlay:hover img {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 1s;
+  opacity: 1;
+  overflow: hidden; }
+
+.overlay:hover h4 {
+  display: none; }
+
+.project-summary {
+  background-color: #fff;
+  display: inline-block;
+  width: 25%;
+  position: relative;
+  border: 2px solid #EEEEEF; }
+
+.project-summary p {
+  min-height: 100px; }
 
 #contact {
   background-color: #fff; }

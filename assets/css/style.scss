@@ -248,19 +248,6 @@ a {
     height: auto;
 }
 
-.project-container {
-    display: inline-block;
-    position: relative;
-    background-color: rgba(255, 255, 255, .05);
-    padding: 40px 20px;
-    overflow: auto;
-    box-shadow: 10px 10px 15px rgba(33, 33, 33, .7);
-    border-radius: 15px;    
-    margin-bottom: 30px;
-    width: 100%;
-    /* min-height: 80vh; */
-  }
-
 .highlight {
     position: relative;
     margin-bottom: 50px;
@@ -309,64 +296,6 @@ a {
     padding: 25px;
 }
 
-// OTHER PROJECTS
-
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 300px;
-    width: 300px;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: rgba(33, 33, 33, .7);
-}
-
-.project-summary {
-    background-color: #fff;
-    display: inline-block;
-    width: 20%;
-    // min-height: 425px;
-    overflow: auto;
-    border: 2px solid #EEEEEF;
-}
-
-// .project-summary::before {
-//     content: "";
-//     display: none;
-//     height: 100%;
-//     width: 100%;
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     background-color: rgba(52, 73, 94, 1);
-// }
-
-.project-summary img {
-    width: 100%;
-}
-
-.project-summary img:hover {
-    cursor: pointer;
-    transform: scale(1.1);
-    transition: all 1s;
-}
-
-.project-summary h3 {
-    font-weight: bold;
-    padding: 20px;
-    text-align: center;
-    color: $primary-theme;
-}
-
-.project-summary p {
-    min-height: 100px;
-}
-
-
-
 .more-portfolio {
     background-color: $primary-theme;
     color: #fff;
@@ -377,6 +306,64 @@ a {
     padding: 20px;
     border: 2px solid $primary-theme;
     text-transform: uppercase;
+}
+
+// OTHER PROJECTS
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.project-summary:nth-of-type(3n) .overlay {
+    background-color: $primary-theme;
+}
+
+.project-summary:nth-of-type(3n+1) .overlay {
+    background-color: $secondary-theme;
+}
+
+.project-summary:nth-of-type(3n+2) .overlay {
+    background-color: $dark-grey;
+}
+
+.overlay img {
+    max-width: 100%;
+    opacity: .5;
+}
+
+.overlay h4 {
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.overlay:hover img {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 1s;
+    opacity: 1;
+    overflow: hidden;
+}
+
+.overlay:hover h4 {
+    display: none;
+}
+
+.project-summary {
+    background-color: #fff;
+    display: inline-block;
+    width: 25%;
+    position: relative;
+    border: 2px solid #EEEEEF;
+}
+
+
+
+.project-summary p {
+    min-height: 100px;
 }
 
 // CONTACT
