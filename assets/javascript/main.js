@@ -202,13 +202,13 @@ $(document).ready(function () {
 
             // Link button to deployed project
             var deployedButton = $("<button>");
-            deployedButton.html("Demo <span class='glyphicon glyphicon-arrow-right'>");
+            deployedButton.html("Demo");
             deployedButton.addClass("more-portfolio");
             $(featuredProjectLink).append(deployedButton);
 
             // Link button to project code
             var codeButton = $("<button>");
-            codeButton.html("Code <span class='glyphicon glyphicon-arrow-right'>");
+            codeButton.html("Code");
             codeButton.addClass("more-portfolio");
             $(githubLink).append(codeButton);
 

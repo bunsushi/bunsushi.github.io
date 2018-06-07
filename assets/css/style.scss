@@ -1,7 +1,7 @@
 // VARIABLES
 
 $primary-theme: #FFB91F;
-$primary-accent: #f37335;
+$primary-accent: rgb(252, 172, 0);
 $secondary-theme: #267871;
 $secondary-accent: #136a8a;
 $accent-theme: #fe22c3;
@@ -291,7 +291,6 @@ a {
     // border: 1px solid black;
     height: 60vh;
     margin-bottom: 10vh;
-    border-bottom: 1px solid black;
 
     h2 {
         @extend %branding-comment;
@@ -312,6 +311,10 @@ a {
     // display: inline-block;
     min-width: 40%;
     // padding: 0 10vw;
+    // border: 1px solid $primary-accent;
+    border-radius: 15px;
+    padding: 50px;
+    margin: 20px;
 }
 
 .project-container:nth-of-type(odd) .featured-image, .project-container:nth-of-type(odd) .featured-square-image, .project-container:nth-of-type(odd) .project-details {
@@ -321,8 +324,6 @@ a {
 .project-container:nth-of-type(even) .featured-image, .project-container:nth-of-type(even) .featured-square-image, .project-container:nth-of-type(even) .project-details {
     float: right;
 }
-
-
 
 .project-title {
     position: absolute;
@@ -344,13 +345,20 @@ a {
 .more-portfolio {
     background-color: $primary-theme;
     color: #fff;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     margin-top: 50px;
-    margin-right: 20px;
+    margin: 10px;
     padding: 20px;
-    border: 2px solid $primary-theme;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: none;
     text-transform: uppercase;
+}
+
+.more-portfolio:hover {
+    background-color: $primary-accent;
 }
 
 // OTHER PROJECTS
@@ -433,6 +441,23 @@ a {
 
 #contact {
     background-color: #fff;
+
+    ul {
+        text-align: center;
+    }
+
+    li {
+        display: inline-block;
+        text-decoration: none;
+        margin: 50px;
+        font-size: 200px;
+    }
+
+    img {
+        max-height: 250px;
+        max-width: 400px;
+    }
+
 }
 
 // FOOTER
