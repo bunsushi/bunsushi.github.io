@@ -50,8 +50,8 @@ $(document).ready(function () {
         },
         {
             name: "Pie a la Node",
-            image: "assets/images/pie-a-la-node.png",
-            square_image: "assets/images/pie-a-la-node-square.png",
+            image: "assets/images/pie-a-la-node.PNG",
+            square_image: "assets/images/pie-a-la-node-square.PNG",
             url: "https://piealanode.herokuapp.com",
             repository: "https://github.com/bunsushi/pie-a-la-node",
             featured: false,
@@ -60,7 +60,7 @@ $(document).ready(function () {
         },
         {
             name: "Bash Boutique",
-            image: "assets/images/bash-boutique.png",
+            // image: "assets/images/bash-boutique.png",
             square_image: "assets/images/bash-boutique-square.png",
             url: "https://github.com/bunsushi/bash-boutique",
             repository: "https://github.com/bunsushi/bash-boutique",
@@ -70,7 +70,7 @@ $(document).ready(function () {
         },
         {
             name: "Hey LIRI",
-            image: "assets/images/hey-liri.png",
+            // image: "assets/images/hey-liri.png",
             square_image: "assets/images/hey-liri-square.png",
             url: "https://github.com/bunsushi/hey-LIRI",
             repository: "https://github.com/bunsushi/hey-LIRI",
@@ -80,7 +80,7 @@ $(document).ready(function () {
         },
         {
             name: "@mesobotamia",
-            image: "assets/images/mesobotamia.png",
+            // image: "assets/images/mesobotamia.png",
             square_image: "assets/images/mesobotamia-square.png",
             url: "https://twitter.com/mesobotamia",
             repository: "https://github.com/bunsushi/Mesobotamia",
@@ -91,7 +91,7 @@ $(document).ready(function () {
         {
             name: "Cinemapp.r",
             image: "assets/images/cinemappr.png",
-            square_image: "assets/images/gplaypattern.png",
+            // square_image: "assets/images/gplaypattern.png",
             url: "https://cinemappr.herokuapp.com",
             repository: "https://github.com/bunsushi/Cinemappr",
             featured: true,
