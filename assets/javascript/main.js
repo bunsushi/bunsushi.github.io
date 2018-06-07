@@ -40,7 +40,7 @@ $(document).ready(function () {
     var featuredProjects = [
         {
             name: "sadhana",
-            image: "assets/images/gplaypattern.png",
+            image: "assets/images/trolley-tracker.png",
             square_image: "assets/images/gplaypattern.png",
             url: "https://mysadhana.herokuapp.com",
             repository: "https://github.com/bunsushi/sadhana",
@@ -60,7 +60,7 @@ $(document).ready(function () {
         },
         {
             name: "Bash Boutique",
-            image: "assets/images/bash-boutique-square.png",
+            image: "assets/images/bash-boutique.png",
             square_image: "assets/images/bash-boutique-square.png",
             url: "https://github.com/bunsushi/bash-boutique",
             repository: "https://github.com/bunsushi/bash-boutique",
@@ -70,7 +70,7 @@ $(document).ready(function () {
         },
         {
             name: "Hey LIRI",
-            image: "assets/images/hey-liri-square.png",
+            image: "assets/images/hey-liri.png",
             square_image: "assets/images/hey-liri-square.png",
             url: "https://github.com/bunsushi/hey-LIRI",
             repository: "https://github.com/bunsushi/hey-LIRI",
@@ -80,7 +80,7 @@ $(document).ready(function () {
         },
         {
             name: "@mesobotamia",
-            image: "assets/images/mesobotamia-square.png",
+            image: "assets/images/mesobotamia.png",
             square_image: "assets/images/mesobotamia-square.png",
             url: "https://twitter.com/mesobotamia",
             repository: "https://github.com/bunsushi/Mesobotamia",
@@ -139,7 +139,7 @@ $(document).ready(function () {
             tags: ["HTML/CSS", "Bootstrap", "JavaScript", "jQuery"]
         },
         {
-            name: "You Have a Gambling Problem",
+            name: "Gambling Problem",
             image: "assets/images/gambling-problem.png",
             square_image: "assets/images/gambling-problem-square.JPG",
             url: "https://bunsushi.github.io/Gambling-Problem",
@@ -186,32 +186,39 @@ $(document).ready(function () {
             squareImageOne.addClass("featured-square-image");
             
             projectContainer.append(displayFeaturedProjects);
-            projectContainer.append(squareImageOne);
-            // highlightImage.append(displayFeaturedProjects);
-            // highlight.append(highlightImage);
+            // projectContainer.append(squareImageOne);
 
+            // Container for project details
+            var projectDetails = $("<div>");
+            projectDetails.addClass("project-details");
+
+            // Header
             var projectTitle = $("<h2>");
             projectTitle.text(featuredProjects[i].name);
             
+            // Description paragraph
+            var projectDescription = $("<p>");
+            projectDescription.append(featuredProjects[i].description);
 
-            var projectDescription = $("<div>");
-            projectDescription.append("<p>" + featuredProjects[i].description);
-
-            projectContainer.append(projectTitle);
-            projectContainer.append(projectDescription);
-
+            // Link button to deployed project
             var deployedButton = $("<button>");
             deployedButton.html("Demo <span class='glyphicon glyphicon-arrow-right'>");
             deployedButton.addClass("more-portfolio");
             $(featuredProjectLink).append(deployedButton);
 
+            // Link button to project code
             var codeButton = $("<button>");
             codeButton.html("Code <span class='glyphicon glyphicon-arrow-right'>");
             codeButton.addClass("more-portfolio");
             $(githubLink).append(codeButton);
 
-            projectContainer.append(featuredProjectLink);
-            projectContainer.append(githubLink);
+            projectDetails.append(projectTitle);
+            projectDetails.append(projectDescription);
+            projectDetails.append(featuredProjectLink);
+            projectDetails.append(githubLink);
+            projectContainer.append(projectDetails);
+
+
 
             // highlightTitle.append(projectTitle);
             // highlightTitle.append(projectDescription);

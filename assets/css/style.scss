@@ -1,7 +1,10 @@
 // VARIABLES
 
 $primary-theme: #FFB91F;
-$secondary-theme: #007866;
+$primary-accent: #f37335;
+$secondary-theme: #267871;
+$secondary-accent: #136a8a;
+$accent-theme: #fe22c3;
 $dark-grey: #333;
 $heading-font: 'Josefin Sans', sans-serif;
 $comment-font: 'Playfair Display', serif;
@@ -101,9 +104,10 @@ a {
 /* LANDING PAGE */
 .landing-page {
     background-color: $primary-theme;
+    background: linear-gradient(to right, $primary-theme, $primary-accent);
     background-size: cover;
     padding: 2vw 5vw;
-    min-height: 95vh;
+    min-height: 100vh;
     position: relative;
     border: 2.5vw solid #fff;
 }
@@ -173,7 +177,7 @@ a {
     display: block;
     bottom: -120px;
     border: 90px solid transparent;
-    border-top-color: $primary-theme;
+    border-top-color: $primary-accent;
     opacity: .8;
     left: 20%;
     margin-left: -50px;
@@ -263,7 +267,7 @@ a {
     display: block;
     bottom: -140px;
     border: 90px solid transparent;
-    border-top-color: $secondary-theme;
+    border-top-color: $secondary-accent;
     opacity: .8;
     right: 20%;
     margin-left: -50px;
@@ -277,37 +281,47 @@ a {
     background-color: #fff;
     padding: 50px 0;
     text-align: center;
+
+    h1 {
+       text-align: left;
+    }
 }
 
 .project-container {
-    border: 1px solid black;
-    height: 50vh;
+    // border: 1px solid black;
+    height: 60vh;
+    margin-bottom: 10vh;
+    border-bottom: 1px solid black;
 
     h2 {
         @extend %branding-comment;
-        // text-align: center;
     }
 
-    // p {
-    //     text-align: center;
-    // }
 }
 
 .featured-image {
     height: 100%;
+    // width: 60%;
 }
 
 .featured-square-image {
     height: 50%;
 }
 
-.project-container:nth-of-type(odd) .featured-image, .project-container:nth-of-type(odd) .featured-square-image {
+.project-details {
+    // display: inline-block;
+    min-width: 40%;
+    // padding: 0 10vw;
+}
+
+.project-container:nth-of-type(odd) .featured-image, .project-container:nth-of-type(odd) .featured-square-image, .project-container:nth-of-type(odd) .project-details {
     float: left;
 }
 
-.project-container:nth-of-type(even) .featured-image, .project-container:nth-of-type(even) .featured-square-image {
+.project-container:nth-of-type(even) .featured-image, .project-container:nth-of-type(even) .featured-square-image, .project-container:nth-of-type(even) .project-details {
     float: right;
 }
+
 
 
 .project-title {
@@ -341,12 +355,24 @@ a {
 
 // OTHER PROJECTS
 
+#other {
+    h1 {
+        margin-bottom: 10vh;
+    }
+}
+
+#other-projects {
+    margin-top: 20vh;
+    transform: rotate(45deg);
+    width: 70vw;
+}
+
 .project-summary {
     background-color: #fff;
     display: inline-block;
     width: 25%;
     position: relative;
-    margin-top: -12px;
+    // transform: rotate(45deg);
 }
 
 .project-title {
@@ -354,6 +380,7 @@ a {
     height: 100%;
     padding: 15px;
     border-radius: 50%;
+    transform: rotate(-45deg);
 }
 
 .overlay {
@@ -399,7 +426,7 @@ a {
 }
 
 .project-summary:nth-of-type(3n+2) .overlay {
-    background-color: #fe22c3;
+    background-color: $accent-theme;
 }
 
 // CONTACT
@@ -412,6 +439,7 @@ a {
 
 #footer {
     background-color: $secondary-theme;
+    background: linear-gradient(to bottom, $secondary-theme, $secondary-accent);
     padding: 10vh 0;
 
     p {
