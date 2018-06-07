@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Tegan Bunsu Ashby | Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/ico" href="favicon.ico">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700|Montserrat:400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700|Playfair+Display:400,700,900" rel="stylesheet">
     <!-- Font Awesome -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <!-- Bootstrap Javascript and jQuery library -->
@@ -26,7 +27,7 @@
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
+        <div class="container-navbar">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
@@ -36,9 +37,9 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">
-                    <p>Tegan Bunsu Ashby</p>
-                </a>
+                <!-- <a class="navbar-brand" href="#">
+                    <img alt="Brand" src="assets/images/kandinsky-abstract.svg" id="brand"> Tegan Bunsu Ashby
+                </a> -->
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -59,7 +60,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="https://www.linkedin.com/in/teganbunsuashby">
                             <i class="fab fa-linkedin-in fa-lg"></i>
                         </a>
                     </li>
@@ -75,146 +76,178 @@
 
     <!-- Main body content -->
     <section class="landing-page">
-        <div id="center">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="hello">
-                        <h1 id="title-1">Hi, I'm Tegan Bunsu Ashby</h1>
-                        <h3 id="title-2">Software Developer //
-                            <span>
-                                <i class="fas fa-map-marker-alt"></i>
-                            </span> Philadelphia, PA</h3>
-                    </div>
-                    <!-- <h3>
-                            <span class="yellow-font">
-                                <i class="fas fa-map-marker-alt fa-lg"></i>
-                            </span> Philadelphia, PA</h4> -->
-                    <!-- </div> -->
-                </div>
-            </div>
+
+        <div class="brand-cluster">
+            <img src="assets/images/kandinsky-brand.svg" alt="Tegan Bunsu Ashby" id="brand">
+            <h2 id="brand-name">Tegan Bunsu Ashby</h2>
+        </div>
+
+        <div class="hello">
+            <h4>// Software Developer</h4>
+            <h4>//
+                <span>
+                    <i class="fas fa-map-marker-alt"></i>
+                </span> Philadelphia</h4>
+        </div>
+
+        <div id="downunder">
+            <a href="#about">
+                <h1>
+                    <i class="fas fa-chevron-down"></i>
+                </h1>
+            </a>
         </div>
     </section>
 
     <section class="hideme" id="about">
         <div class="container-fluid">
-            <div class="col-md-8">
-                <h1 id="elevator-pitch">// Elevator Pitch</h1>
-                <div id="talkbubble">
-                    <p>I'm a user-oriented
-                        <strong>full-stack developer</strong>. I build elegant, fully scalable databases and the beautiful, snappy
-                        user interfaces to do them justice. I'm interested in
+            <div class="row">
+                <div class="col-md-8">
+                    <h1 id="elevator-pitch">// Elevator Pitch</h1>
+                    <p>I'm a human-oriented
+                        <strong>full-stack developer</strong>. I like to build web applications driven by data. I'm interested in
                         <strong>machine learning</strong>,
                         <strong>computational linguistics</strong>, and
                         <strong>big data visualization and manipulation</strong>.
                     </p>
                     <p>I studied formal linguistics and ancient Near Eastern languages at the University of Pennsylvania.</p>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <img src="assets/images/teganbunsuashby-color.jpg" id="profile">
+                <div class="col-md-4">
+                    <img src="assets/images/teganbunsuashby-color.jpg" id="profile">
+
+                    <div id="triangle">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="hideme" id="glance">
         <div class="container-fluid">
-            <div class="col-md-12">
-                <h1>// At a Glance</h1>
-                <div class="row">
-                    <div class="col-md-4">
-                        <h3>Languages</h3>
-                        <ul>
-                            <li>
-                                <strong>Python</strong>
-                            </li>
-                            <li>
-                                <strong>Java</strong>
-                            </li>
-                            <li>
-                                <strong>SQL</strong>
-                            </li>
-                            <li>
-                                <strong>JavaScript (ES5/6)</strong>
-                            </li>
-                            <li>
-                                <strong>HTML5/CSS3</strong>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4">
-                        <h3>Front-End</h3>
-                        <ul>
-                            <li>
-                                <strong>React</strong>
-                            </li>
-                            <li>
-                                <strong>jQuery</strong>
-                            </li>
-                            <li>
-                                <strong>Sass</strong>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4">
-                        <h3>Back-End</h3>
-                        <ul>
-                            <li>
-                                <strong>MongoDB</strong>
-                            </li>
-                            <li>
-                                <strong>Express</strong>
-                            </li>
-                            <li>
-                                <strong>Node.js</strong>
-                            </li>
-                            <li>
-                                <strong>MySQL</strong>
-                            </li>
-                        </ul>
-                    </div>
+            <!-- <div class="col-md-12"> -->
+            <h1>// At a Glance</h1>
+            <!-- <div class="row"> -->
+            <div class="glance-shape">
+                <div id="glance-circle">
+                    <h3>Languages</h3>
+                    <ul>
+                        <li>
+                            <strong>Python</strong>
+                        </li>
+                        <li>
+                            <strong>Java</strong>
+                        </li>
+                        <li>
+                            <strong>SQL</strong>
+                        </li>
+                        <li>
+                            <strong>JavaScript (ES5/6)</strong>
+                        </li>
+                        <li>
+                            <strong>HTML5/CSS3</strong>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="glance-shape">
+                <div id="glance-triangle">
+                    <h3>Front-End</h3>
+                    <ul>
+                        <li>
+                            <strong>React</strong>
+                        </li>
+                        <li>
+                            <strong>jQuery</strong>
+                        </li>
+                        <li>
+                            <strong>Sass</strong>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="glance-shape">
+                <div id="glance-square">
+                    <h3>Back-End</h3>
+                    <ul>
+                        <li>
+                            <strong>MongoDB</strong>
+                        </li>
+                        <li>
+                            <strong>Express</strong>
+                        </li>
+                        <li>
+                            <strong>Node.js</strong>
+                        </li>
+                        <li>
+                            <strong>MySQL</strong>
+                        </li>
+                    </ul>
                 </div>
 
             </div>
         </div>
+
+        <!-- </div>
+        </div> -->
     </section>
 
     <section class="hideme" id="featured">
         <div class="container-fluid">
             <div class="featured-content">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h1>// Featured Projects</h1>
-                        <div id="projects"></div>
-                        </a>
-                    </div>
-                </div>
+                <h1>// Featured Projects</h1>
+                <!-- <div id="projects"></div> -->
             </div>
         </div>
+        <div id="projects"></div>
     </section>
 
     <section class="hideme" id="other">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1>// Other Projects</h1>
-                    <div id="other-projects"></div>
-                    <div class="text-center">
-                        </a>
-                    </div>
-                </div>
-            </div>
+            <h1>// Other Projects</h1>
+            <div id="other-projects"></div>
         </div>
     </section>
 
     <section class="hideme" id="contact">
         <div class="container-fluid">
+            <h1>// Contact</h1>
+            <p>Connect with me on LinkedIn and check out my open source work on GitHub. I am periodically available for freelance
+                work. If you have a project in mind, drop me a line with a time frame, budget, and a short description.</p>
+            <ul>
+                <li>
+                    <a href="mailto:tbunsu@gmail.com">
+                        <i class="far fa-envelope"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/teganbunsuashby">
+                        <img src="assets/images/linkedin.png" "Tegan Bunsu Ashby's LinkedIn Profile">
+                        </i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/bunsushi">
+                        <img src="assets/images/octocat.png" "Tegan Bunsu Ashby's GitHub Profile">
+                        </i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="footer">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-md-12">
-                    <h1>// Contact</h1>
-                    <p>I am periodically available for freelance work. If you have a project in mind, drop me a line and a short
-                        description.
-                    </p>
-                    <p>Form goes here</p>
+                <div class="col-md-4">
+                    <p>&copy 2018 Tegan Bunsu Ashby</p>
+                </div>
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-4">
+                    <p>This web page was built with GitHub Pages, a dash of Bootstrap, a pinch of Sass, and a touch of JavaScript
+                        for the magic.</p>
+                    <p>The design was inspired by Wassily Kandinsky's musical paintings. The brand is by Danil Polshin for the
+                        Noun Project.</p>
                 </div>
             </div>
         </div>
