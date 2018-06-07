@@ -299,7 +299,9 @@ a {
 }
 
 .featured-image {
-    height: 100%;
+    // height: 100%;
+    width: 55%;
+    overflow: hidden;
     // width: 60%;
 }
 
@@ -309,7 +311,7 @@ a {
 
 .project-details {
     // display: inline-block;
-    min-width: 40%;
+    width: 40%;
     // padding: 0 10vw;
     // border: 1px solid $primary-accent;
     border-radius: 15px;
@@ -449,13 +451,13 @@ a {
     li {
         display: inline-block;
         text-decoration: none;
-        margin: 50px;
+        width: 33%;
+        // margin: 50px;
         font-size: 200px;
     }
 
     img {
-        max-height: 250px;
-        max-width: 400px;
+        width: 100%;
     }
 
 }

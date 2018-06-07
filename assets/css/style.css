@@ -223,13 +223,14 @@ a {
   margin-bottom: 10vh; }
 
 .featured-image {
-  height: 100%; }
+  width: 55%;
+  overflow: hidden; }
 
 .featured-square-image {
   height: 50%; }
 
 .project-details {
-  min-width: 40%;
+  width: 40%;
   border-radius: 15px;
   padding: 50px;
   margin: 20px; }
@@ -331,11 +332,10 @@ a {
   #contact li {
     display: inline-block;
     text-decoration: none;
-    margin: 50px;
+    width: 33%;
     font-size: 200px; }
   #contact img {
-    max-height: 250px;
-    max-width: 400px; }
+    width: 100%; }
 
 #footer {
   background-color: #267871;
