@@ -313,4 +313,10 @@ a {
 #contact {
   background-color: #fff; }
 
+#footer {
+  background-color: #007866;
+  padding: 10vh 0; }
+  #footer p {
+    color: #fff; }
+
 /*# sourceMappingURL=style.css.map */

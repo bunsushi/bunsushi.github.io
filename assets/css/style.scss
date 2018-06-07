@@ -413,3 +413,14 @@ a {
 #contact {
     background-color: #fff;
 }
+
+// FOOTER
+
+#footer {
+    background-color: $secondary-theme;
+    padding: 10vh 0;
+    
+    p {
+        color: #fff;
+    }
+}
