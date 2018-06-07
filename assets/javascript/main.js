@@ -40,8 +40,8 @@ $(document).ready(function () {
     var featuredProjects = [
         {
             name: "sadhana",
-            image: "assets/images/trolley-tracker.png",
-            square_image: "assets/images/gplaypattern.png",
+            image: "assets/images/sadhana.png",
+            square_image: "assets/images/sadhana-square.png",
             url: "https://mysadhana.herokuapp.com",
             repository: "https://github.com/bunsushi/sadhana",
             featured: true,
@@ -184,7 +184,7 @@ $(document).ready(function () {
             var squareImageOne = $("<img>");
             squareImageOne.attr("src", featuredProjects[i].square_image);
             squareImageOne.addClass("featured-square-image");
-            
+
             projectContainer.append(displayFeaturedProjects);
             // projectContainer.append(squareImageOne);
 
@@ -195,7 +195,7 @@ $(document).ready(function () {
             // Header
             var projectTitle = $("<h2>");
             projectTitle.text(featuredProjects[i].name);
-            
+
             // Description paragraph
             var projectDescription = $("<p>");
             projectDescription.append(featuredProjects[i].description);
@@ -236,6 +236,11 @@ $(document).ready(function () {
 
     // GENERATE OTHER PROJECTS
     function displayOtherProjects() {
+        var projectStart = $("<div>");
+        projectStart.addClass("project-start");
+
+        $("#other-projects").append(projectStart);
+
         for (var i = 0; i < featuredProjects.length; i++) {
             // var featuredProjectLink = $("<a>");
             // featuredProjectLink.attr("target", "_blank");
@@ -262,9 +267,16 @@ $(document).ready(function () {
 
             if (featuredProjects[i].featured === false) {
                 $("#other-projects").append(projectContainer);
+
             }
 
         }
+
+        var projectEnd = $("<div>");
+        projectEnd.addClass("project-end"); 
+
+        $("#other-projects").append(projectEnd);
+
     }
 
     function generateProjectInfo() {

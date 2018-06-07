@@ -1,7 +1,7 @@
 // VARIABLES
 
 $primary-theme: #FFB91F;
-$primary-accent: rgb(252, 172, 0);
+$primary-accent: rgb(252, 172, 10);
 $secondary-theme: #267871;
 $secondary-accent: #136a8a;
 $accent-theme: #fe22c3;
@@ -377,6 +377,28 @@ a {
     width: 70vw;
 }
 
+.project-start {
+    display: inline-block;
+    width: 25%;
+    height: 25px;
+    background-color: $secondary-theme;
+}
+
+.project-end {
+    display: inline-block;
+    width: 25%;
+    background-color: $accent-theme;
+    border: 100px solid #f7f7f8;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.project-end:before {
+    content: '';
+    padding-top: 100%;
+    float: left;
+}
+
 .project-summary {
     background-color: #fff;
     display: inline-block;
@@ -468,6 +490,10 @@ a {
     background-color: $secondary-theme;
     background: linear-gradient(to bottom, $secondary-theme, $secondary-accent);
     padding: 10vh 0;
+
+    img {
+        height: 20vh;
+    }
 
     p {
         color: #fff;

@@ -71,7 +71,7 @@ a {
 /* LANDING PAGE */
 .landing-page {
   background-color: #FFB91F;
-  background: linear-gradient(to right, #FFB91F, #fcac00);
+  background: linear-gradient(to right, #FFB91F, #fcac0a);
   background-size: cover;
   padding: 2vw 5vw;
   min-height: 100vh;
@@ -128,7 +128,7 @@ a {
   display: block;
   bottom: -120px;
   border: 90px solid transparent;
-  border-top-color: #fcac00;
+  border-top-color: #fcac0a;
   opacity: .8;
   left: 20%;
   margin-left: -50px;
@@ -270,7 +270,7 @@ a {
   text-transform: uppercase; }
 
 .more-portfolio:hover {
-  background-color: #fcac00; }
+  background-color: #fcac0a; }
 
 #other h1 {
   margin-bottom: 10vh; }
@@ -279,6 +279,25 @@ a {
   margin-top: 20vh;
   transform: rotate(45deg);
   width: 70vw; }
+
+.project-start {
+  display: inline-block;
+  width: 25%;
+  height: 25px;
+  background-color: #267871; }
+
+.project-end {
+  display: inline-block;
+  width: 25%;
+  background-color: #fe22c3;
+  border: 100px solid #f7f7f8;
+  border-radius: 50%;
+  overflow: hidden; }
+
+.project-end:before {
+  content: '';
+  padding-top: 100%;
+  float: left; }
 
 .project-summary {
   background-color: #fff;
@@ -341,6 +360,8 @@ a {
   background-color: #267871;
   background: linear-gradient(to bottom, #267871, #136a8a);
   padding: 10vh 0; }
+  #footer img {
+    height: 20vh; }
   #footer p {
     color: #fff; }
 
