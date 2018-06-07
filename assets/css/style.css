@@ -3,6 +3,11 @@
   text-transform: uppercase;
   letter-spacing: 15px; }
 
+.project-container h2 {
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+  letter-spacing: 15px; }
+
 /* GENERAL */
 body {
   font-family: "Josefin Sans", sans-serif;
@@ -172,7 +177,7 @@ a {
   overflow: hidden;
   width: 100%; }
 
-#glance-square:before {
+#glance-square::before {
   content: '';
   padding-top: 100%;
   float: left; }
@@ -204,41 +209,27 @@ a {
   margin-left: -50px;
   z-index: 1; }
 
-#projects {
-  text-align: center; }
-
-#recent-projects {
-  display: block; }
-
 #featured {
   margin-top: 0;
   background-color: #fff;
-  padding: 50px 0; }
-
-.featured-project {
-  display: inline-block;
-  width: 100%;
-  height: auto; }
-
-.highlight {
-  position: relative;
-  margin-bottom: 50px; }
-
-.highlight-child {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 0; }
-
-.project-container img {
-  width: 100%;
-  margin-right: 20px;
-  position: relative;
-  right: 0; }
-.project-container h2 {
+  padding: 50px 0;
   text-align: center; }
-.project-container p {
-  text-align: left; }
+
+.project-container {
+  border: 1px solid black;
+  height: 50vh; }
+
+.featured-image {
+  height: 100%; }
+
+.featured-square-image {
+  height: 50%; }
+
+.project-container:nth-of-type(odd) .featured-image, .project-container:nth-of-type(odd) .featured-square-image {
+  float: left; }
+
+.project-container:nth-of-type(even) .featured-image, .project-container:nth-of-type(even) .featured-square-image {
+  float: right; }
 
 .project-title {
   position: absolute;

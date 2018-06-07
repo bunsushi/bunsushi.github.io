@@ -91,6 +91,7 @@ $(document).ready(function () {
         {
             name: "Cinemapp.r",
             image: "assets/images/cinemappr.png",
+            square_image: "assets/images/gplaypattern.png",
             url: "https://cinemappr.herokuapp.com",
             repository: "https://github.com/bunsushi/Cinemappr",
             featured: true,
@@ -171,22 +172,33 @@ $(document).ready(function () {
 
             var projectContainer = $("<div>");
             projectContainer.addClass("project-container");
-            var highlight = $("<div class='row highlight'>");
+            // var highlight = $("<div class='row highlight'>");
 
-            var highlightImage = $("<div class='col-md-7'>");
-            var highlightTitle = $("<div class='col-md-5 highlight-child'>");
+            // var highlightImage = $("<div class='col-md-7'>");
+            // var highlightTitle = $("<div class='col-md-5 highlight-child'>");
 
             var displayFeaturedProjects = $("<img>");
             displayFeaturedProjects.attr("src", featuredProjects[i].image);
-            displayFeaturedProjects.addClass("pull-left");
-            highlightImage.append(displayFeaturedProjects);
-            highlight.append(highlightImage);
+            displayFeaturedProjects.addClass("featured-image");
 
-            var projectTitle = $("<h1>");
+            var squareImageOne = $("<img>");
+            squareImageOne.attr("src", featuredProjects[i].square_image);
+            squareImageOne.addClass("featured-square-image");
+            
+            projectContainer.append(displayFeaturedProjects);
+            projectContainer.append(squareImageOne);
+            // highlightImage.append(displayFeaturedProjects);
+            // highlight.append(highlightImage);
+
+            var projectTitle = $("<h2>");
             projectTitle.text(featuredProjects[i].name);
+            
 
             var projectDescription = $("<div>");
             projectDescription.append("<p>" + featuredProjects[i].description);
+
+            projectContainer.append(projectTitle);
+            projectContainer.append(projectDescription);
 
             var deployedButton = $("<button>");
             deployedButton.html("Demo <span class='glyphicon glyphicon-arrow-right'>");
@@ -198,13 +210,16 @@ $(document).ready(function () {
             codeButton.addClass("more-portfolio");
             $(githubLink).append(codeButton);
 
-            highlightTitle.append(projectTitle);
-            highlightTitle.append(projectDescription);
-            highlightTitle.append(featuredProjectLink);
-            highlightTitle.append(githubLink);
-            highlight.append(highlightTitle);
+            projectContainer.append(featuredProjectLink);
+            projectContainer.append(githubLink);
 
-            projectContainer.append(highlight);
+            // highlightTitle.append(projectTitle);
+            // highlightTitle.append(projectDescription);
+            // highlightTitle.append(featuredProjectLink);
+            // highlightTitle.append(githubLink);
+            // highlight.append(highlightTitle);
+
+            // projectContainer.append(highlight);
 
             if (featuredProjects[i].featured === true) {
                 $("#projects").append(projectContainer);
