@@ -51,6 +51,7 @@ strong {
 
 p {
     color: #666;
+    font-size: 16px;
 }
 
 a {
@@ -166,23 +167,29 @@ a {
 
 // ELEVATOR PITCH
 
+#elevator-pitch {
+    z-index: 2;
+    // background-color: #fff;
+    // border-radius: 15px;
+}
+
 #about {
     background-color: #fff;
     position: relative;
 }
 
-#about::after {
-    content: "";
-    position: absolute;
-    display: block;
-    bottom: -120px;
-    border: 90px solid transparent;
-    border-top-color: $primary-accent;
-    opacity: .8;
-    left: 20%;
-    margin-left: -50px;
-    z-index: 1;
-}
+// #about::before {
+//     content: "";
+//     position: absolute;
+//     display: block;
+//     bottom: -180px;
+//     border: 120px solid transparent;
+//     border-top-color: $primary-theme;
+//     left: 12%;
+//     opacity: .9;
+//     margin-left: -50px;
+//     z-index: 1;
+// }
 
 #profile {
     border-radius: 50%;
@@ -198,6 +205,30 @@ a {
     border-top: 420px solid transparent;
     border-right: 420px solid $primary-theme;
     z-index: -2;
+}
+
+#big-kahuna {
+    width: 35vw;
+    height: 35vw;
+    border-radius: 100%;
+    background-color: $secondary-accent;
+    position: absolute;
+    bottom: -15vw;
+    left: -20vw;
+    opacity: .5;
+    z-index: 0;
+}
+
+#little-diamond {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 15px;
+    border: 10px solid $primary-theme;
+    transform: rotate(45deg);
+    opacity: .8;
+    position: absolute;
+    left: 10vw;
+    bottom: -5vw;
 }
 
 // AT A GLANCE
@@ -300,7 +331,6 @@ a {
 .featured-image {
     width: 55%;
     overflow: hidden;
-    // box-shadow: -1vw 1vw  $secondary-theme;
 }
 
 .featured-square-image {
@@ -317,11 +347,19 @@ a {
     margin: 20px;
 }
 
-.project-container:nth-of-type(odd) .featured-image, .project-container:nth-of-type(odd) .featured-square-image, .project-container:nth-of-type(odd) .project-details {
+.project-container:nth-of-type(odd) .featured-image {
+    box-shadow: 1vw 1.5vw  $secondary-theme;
+}
+
+.project-container:nth-of-type(even) .featured-image {
+    box-shadow: -1vw 1.5vw  $secondary-theme;
+}
+
+.project-container:nth-of-type(odd) .featured-image, .project-container:nth-of-type(odd) .project-details {
     float: left;
 }
 
-.project-container:nth-of-type(even) .featured-image, .project-container:nth-of-type(even) .featured-square-image, .project-container:nth-of-type(even) .project-details {
+.project-container:nth-of-type(even) .featured-image, .project-container:nth-of-type(even) .project-details {
     float: right;
 }
 
@@ -471,7 +509,9 @@ a {
     li {
         display: inline-block;
         text-decoration: none;
-        width: 33%;
+        width: 20%;
+        padding-left: 1vw;
+        padding-right: 1vw;
         // margin: 50px;
         font-size: 200px;
     }
