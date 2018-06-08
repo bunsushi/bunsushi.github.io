@@ -7,6 +7,7 @@ $secondary-accent: #136a8a;
 $accent-theme: #fe22c3;
 $background: #f7f7f8;
 $dark-grey: #333;
+$medium-grey: #444;
 $heading-font: 'Josefin Sans', sans-serif;
 $comment-font: 'Playfair Display', serif;
 
@@ -162,7 +163,7 @@ a {
 
 #downunder:hover {
     cursor: pointer;
-    background-color: #444;
+    background-color: $medium-grey;
 }
 
 // ELEVATOR PITCH
@@ -471,7 +472,6 @@ a {
     display: inline-block;
     width: 25%;
     position: relative;
-    // transform: rotate(45deg);
 }
 
 .project-title {
@@ -513,11 +513,13 @@ a {
     .project-title {
 
         h4 {
-            visibility: hidden;
+            // visibility: hidden;
+            display: none;
         }
 
         .other-links {
             visibility: visible;
+            border-bottom: 1px solid #fff;
         }
 
     }
@@ -536,15 +538,14 @@ a {
 }
 
 .other-links {
-    display: block;
     text-align: center;
     visibility: hidden;
 
 }
 
 .more-other {
-    background-color: $primary-theme;
-    color: #fff;
+    background-color: $dark-grey;
+    color: $primary-theme;
     font-size: 16px;
     font-weight: bold;
     margin: 10px;
@@ -553,6 +554,10 @@ a {
     border-radius: 50%;
     border: none;
     opacity: .9;
+}
+
+.more-other:hover {
+    background-color: $medium-grey;
 }
 
 // CONTACT

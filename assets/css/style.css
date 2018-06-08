@@ -368,9 +368,10 @@ a {
   opacity: .9;
   overflow: hidden; }
 .overlay:hover .project-title h4 {
-  visibility: hidden; }
+  display: none; }
 .overlay:hover .project-title .other-links {
-  visibility: visible; }
+  visibility: visible;
+  border-bottom: 1px solid #fff; }
 
 .project-summary:nth-of-type(3n) .overlay {
   background-color: #FFB91F; }
@@ -382,13 +383,12 @@ a {
   background-color: #fe22c3; }
 
 .other-links {
-  display: block;
   text-align: center;
   visibility: hidden; }
 
 .more-other {
-  background-color: #FFB91F;
-  color: #fff;
+  background-color: #333;
+  color: #FFB91F;
   font-size: 16px;
   font-weight: bold;
   margin: 10px;
@@ -397,6 +397,9 @@ a {
   border-radius: 50%;
   border: none;
   opacity: .9; }
+
+.more-other:hover {
+  background-color: #444; }
 
 #contact {
   background-color: #fff; }
