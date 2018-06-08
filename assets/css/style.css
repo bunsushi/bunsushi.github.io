@@ -29,8 +29,7 @@ h1 {
   margin-bottom: 50px; }
 
 strong {
-  font-weight: 700;
-  border-bottom: 3px solid #FFB91F; }
+  font-weight: 700; }
 
 p {
   color: #666;
@@ -129,14 +128,14 @@ a {
 #profile {
   border-radius: 50%;
   position: absolute;
-  max-width: 400px;
+  max-width: 22vw;
   border: 10px solid #fff; }
 
 #triangle {
   width: 0;
   height: 0;
-  border-top: 420px solid transparent;
-  border-right: 420px solid #FFB91F;
+  border-top: 25vw solid transparent;
+  border-right: 25vw solid #FFB91F;
   z-index: -2; }
 
 #big-kahuna {
@@ -163,34 +162,52 @@ a {
 
 .glance-shape {
   display: inline-block;
-  width: 33%;
-  text-align: center;
-  padding: 20px; }
+  text-align: center; }
+  .glance-shape p {
+    font-size: 18px; }
 
 #glance-circle {
-  width: 100%;
+  width: 25vw;
   border-radius: 100%;
   background-color: #FFB91F;
   overflow: hidden; }
+  #glance-circle p {
+    color: #fff;
+    display: table-cell;
+    width: 25vw;
+    height: 25vw;
+    vertical-align: middle;
+    padding: 0 10%; }
 
 #glance-circle:before {
   content: '';
-  padding-top: 100%;
-  float: left; }
+  padding-top: 100%; }
 
 #glance-triangle {
   width: 0;
   height: 0;
-  border-bottom: 400px solid #fff;
-  border-right: 250px solid transparent;
-  border-left: 250px solid transparent;
-  float: left; }
+  border-bottom: 25vw solid #fff;
+  border-right: 12vw solid transparent;
+  border-left: 12vw solid transparent; }
+  #glance-triangle p {
+    display: table-cell;
+    width: 25vw;
+    height: 25vw;
+    vertical-align: middle;
+    padding: 0 10%; }
 
 #glance-square {
   background-color: #267871;
   border-radius: 5px;
   overflow: hidden;
-  width: 100%; }
+  width: 25vw; }
+  #glance-square p {
+    color: #FFB91F;
+    display: table-cell;
+    width: 25vw;
+    height: 25vw;
+    vertical-align: middle;
+    padding: 0 10%; }
 
 #glance-square::before {
   content: '';
@@ -251,7 +268,7 @@ a {
   box-shadow: 1vw 1.5vw #267871; }
 
 .project-container:nth-of-type(even) .featured-image {
-  box-shadow: -1vw 1.5vw #267871; }
+  box-shadow: -1vw 1.5vw #136a8a; }
 
 .project-container:nth-of-type(odd) .featured-image, .project-container:nth-of-type(odd) .project-details {
   float: left; }
@@ -350,8 +367,10 @@ a {
   transition: all 1s;
   opacity: .9;
   overflow: hidden; }
-.overlay:hover .project-title {
+.overlay:hover .project-title h4 {
   visibility: hidden; }
+.overlay:hover .project-title .other-links {
+  visibility: visible; }
 
 .project-summary:nth-of-type(3n) .overlay {
   background-color: #FFB91F; }
@@ -361,6 +380,23 @@ a {
 
 .project-summary:nth-of-type(3n+2) .overlay {
   background-color: #fe22c3; }
+
+.other-links {
+  display: block;
+  text-align: center;
+  visibility: hidden; }
+
+.more-other {
+  background-color: #FFB91F;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  opacity: .9; }
 
 #contact {
   background-color: #fff; }

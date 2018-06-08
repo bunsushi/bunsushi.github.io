@@ -242,28 +242,57 @@ $(document).ready(function () {
         $("#other-projects").append(projectStart);
 
         for (var i = 0; i < featuredProjects.length; i++) {
-            // var featuredProjectLink = $("<a>");
-            // featuredProjectLink.attr("target", "_blank");
-            // featuredProjectLink.attr("href", featuredProjects[i].url);
+            // Link to deployed project
+            var featuredProjectLink = $("<a>");
+            featuredProjectLink.attr("target", "_blank");
+            featuredProjectLink.attr("href", featuredProjects[i].url);
 
+            // Link to GitHub repository
+            var githubLink = $("<a>");
+            githubLink.attr("target", "_blank");
+            githubLink.attr("href", featuredProjects[i].repository);
+
+            // Container div for project
             var projectContainer = $("<div>");
             projectContainer.addClass("project-summary");
 
+            // Display square image for associated project
             var displayFeaturedProjects = $("<img>");
             displayFeaturedProjects.addClass("featured-project");
             displayFeaturedProjects.attr("src", featuredProjects[i].square_image);
 
+            // Opaque overlay for square image
             var overlay = $("<div>");
             overlay.addClass("overlay");
 
+            // Display project title
             var displayProjectTitle = $("<div>");
             displayProjectTitle.addClass("project-title");
             displayProjectTitle.html("<h4>" + featuredProjects[i].name);
 
             $(overlay).append(displayFeaturedProjects);
             $(overlay).append(displayProjectTitle);
-            $(projectContainer).append(overlay);
 
+            // Link button to deployed project
+            var deployedButton = $("<button>");
+            deployedButton.html("<span><i class='fas fa-laptop'></i></span>");
+            deployedButton.addClass("more-other");
+            $(featuredProjectLink).append(deployedButton);
+
+            // Link button to project code
+            var codeButton = $("<button>");
+            codeButton.html("<span><i class='fas fa-code'></i></span>");
+            codeButton.addClass("more-other");
+            $(githubLink).append(codeButton)
+
+            var displayProjectLinks = $("<div>");
+            displayProjectLinks.addClass("other-links");
+
+            $(displayProjectLinks).append(featuredProjectLink);
+            $(displayProjectLinks).append(githubLink);
+
+            $(displayProjectTitle).append(displayProjectLinks);
+            $(projectContainer).append(overlay);
 
             if (featuredProjects[i].featured === false) {
                 $("#other-projects").append(projectContainer);
@@ -273,7 +302,7 @@ $(document).ready(function () {
         }
 
         var projectEnd = $("<div>");
-        projectEnd.addClass("project-end"); 
+        projectEnd.addClass("project-end");
 
         $("#other-projects").append(projectEnd);
 

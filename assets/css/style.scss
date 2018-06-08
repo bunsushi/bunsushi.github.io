@@ -5,6 +5,7 @@ $primary-accent: rgb(252, 172, 10);
 $secondary-theme: #267871;
 $secondary-accent: #136a8a;
 $accent-theme: #fe22c3;
+$background: #f7f7f8;
 $dark-grey: #333;
 $heading-font: 'Josefin Sans', sans-serif;
 $comment-font: 'Playfair Display', serif;
@@ -28,7 +29,7 @@ body {
     text-align: left;
     line-height: 2;
     letter-spacing: 1px;
-    background-color: #f7f7f8;
+    background-color: $background;
     position: relative;
 }
 
@@ -46,7 +47,6 @@ h1 {
 
 strong {
     font-weight: 700;
-    border-bottom: 3px solid $primary-theme;
 }
 
 p {
@@ -194,7 +194,7 @@ a {
 #profile {
     border-radius: 50%;
     position: absolute;
-    max-width: 400px;
+    max-width: 22vw;
     border: 10px solid #fff;
 }
 
@@ -202,8 +202,8 @@ a {
     // background-color: $primary-theme;
     width: 0;
     height: 0;
-    border-top: 420px solid transparent;
-    border-right: 420px solid $primary-theme;
+    border-top: 25vw solid transparent;
+    border-right: 25vw solid $primary-theme;
     z-index: -2;
 }
 
@@ -235,38 +235,69 @@ a {
 
 .glance-shape {
     display: inline-block;
-    width: 33%;
+    // width: 33%;
     text-align: center;
-    padding: 20px;
+    // padding: 20px;
+
+    p {
+        font-size: 18px;
+    }
 }
 
 #glance-circle {
-    width: 100%;
+    width: 25vw;
     border-radius: 100%;
     background-color: $primary-theme;
     overflow: hidden;
+    // box-shadow: 1vw 1vw $primary-accent;
+
+    p {    
+        color: #fff;
+        display: table-cell;
+        width: 25vw;
+        height: 25vw;
+        vertical-align: middle;
+        padding: 0 10%;
+    }
 }
 
 #glance-circle:before {
     content: '';
     padding-top: 100%;
-    float: left;
 }
 
 #glance-triangle {
+    // position: absolute;
+    // left: 50%;
     width: 0;
     height: 0;
-    border-bottom: 400px solid #fff;
-    border-right: 250px solid transparent;
-    border-left: 250px solid transparent;
-    float:left;
+    border-bottom: 25vw solid #fff;
+    border-right: 12vw solid transparent;
+    border-left: 12vw solid transparent;
+
+    p {
+        display: table-cell;
+        width: 25vw;
+        height: 25vw;
+        vertical-align: middle;
+        padding: 0 10%;
+    }
 }
 
 #glance-square {
     background-color: $secondary-theme;
     border-radius: 5px;
     overflow: hidden;
-    width: 100%;
+    width: 25vw;
+
+    p {
+        color: $primary-theme;
+        display: table-cell;
+        width: 25vw;
+        height: 25vw;
+        vertical-align: middle;
+        padding: 0 10%;
+    }
 }
 
 #glance-square::before {
@@ -352,7 +383,7 @@ a {
 }
 
 .project-container:nth-of-type(even) .featured-image {
-    box-shadow: -1vw 1.5vw  $secondary-theme;
+    box-shadow: -1vw 1.5vw  $secondary-accent;
 }
 
 .project-container:nth-of-type(odd) .featured-image, .project-container:nth-of-type(odd) .project-details {
@@ -480,7 +511,14 @@ a {
     }
 
     .project-title {
-        visibility: hidden;
+
+        h4 {
+            visibility: hidden;
+        }
+
+        .other-links {
+            visibility: visible;
+        }
 
     }
 }
@@ -495,6 +533,26 @@ a {
 
 .project-summary:nth-of-type(3n+2) .overlay {
     background-color: $accent-theme;
+}
+
+.other-links {
+    display: block;
+    text-align: center;
+    visibility: hidden;
+
+}
+
+.more-other {
+    background-color: $primary-theme;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    opacity: .9;
 }
 
 // CONTACT
