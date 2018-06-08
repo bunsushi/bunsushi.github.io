@@ -211,9 +211,7 @@ a {
   z-index: 1; }
 
 #featured {
-  margin-top: 0;
   background-color: #fff;
-  padding: 50px 0;
   text-align: center; }
   #featured h1 {
     text-align: left; }
@@ -364,5 +362,8 @@ a {
     height: 20vh; }
   #footer p {
     color: #fff; }
+
+#brand-footer {
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */

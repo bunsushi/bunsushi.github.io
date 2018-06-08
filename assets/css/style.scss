@@ -277,9 +277,8 @@ a {
 // FEATURED PROJECTS
 
 #featured {
-    margin-top: 0;
     background-color: #fff;
-    padding: 50px 0;
+    // padding: 50px 0;
     text-align: center;
 
     h1 {
@@ -299,10 +298,9 @@ a {
 }
 
 .featured-image {
-    // height: 100%;
     width: 55%;
     overflow: hidden;
-    // width: 60%;
+    // box-shadow: -1vw 1vw  $secondary-theme;
 }
 
 .featured-square-image {
@@ -498,4 +496,8 @@ a {
     p {
         color: #fff;
     }
+}
+
+#brand-footer {
+    text-align: center;
 }
