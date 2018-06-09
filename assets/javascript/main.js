@@ -172,21 +172,12 @@ $(document).ready(function () {
 
             var projectContainer = $("<div>");
             projectContainer.addClass("project-container");
-            // var highlight = $("<div class='row highlight'>");
-
-            // var highlightImage = $("<div class='col-md-7'>");
-            // var highlightTitle = $("<div class='col-md-5 highlight-child'>");
 
             var displayFeaturedProjects = $("<img>");
             displayFeaturedProjects.attr("src", featuredProjects[i].image);
             displayFeaturedProjects.addClass("featured-image");
 
-            var squareImageOne = $("<img>");
-            squareImageOne.attr("src", featuredProjects[i].square_image);
-            squareImageOne.addClass("featured-square-image");
-
             projectContainer.append(displayFeaturedProjects);
-            // projectContainer.append(squareImageOne);
 
             // Container for project details
             var projectDetails = $("<div>");

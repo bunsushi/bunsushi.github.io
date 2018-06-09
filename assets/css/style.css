@@ -74,7 +74,7 @@ a {
   background: linear-gradient(to right, #FFB91F, #fcac0a);
   background-size: cover;
   padding: 2vw 5vw;
-  min-height: 100vh;
+  min-height: 95vh;
   position: relative;
   border: 2.5vw solid #fff; }
 
@@ -255,8 +255,9 @@ a {
   width: 55%;
   overflow: hidden; }
 
-.featured-square-image {
-  height: 50%; }
+.featured-image:hover {
+  cursor: pointer;
+  background-color: #333; }
 
 .project-details {
   width: 40%;

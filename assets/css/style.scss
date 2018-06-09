@@ -109,7 +109,7 @@ a {
     background: linear-gradient(to right, $primary-theme, $primary-accent);
     background-size: cover;
     padding: 2vw 5vw;
-    min-height: 100vh;
+    min-height: 95vh;
     position: relative;
     border: 2.5vw solid #fff;
 }
@@ -365,8 +365,9 @@ a {
     overflow: hidden;
 }
 
-.featured-square-image {
-    height: 50%;
+.featured-image:hover {
+    cursor: pointer;
+    background-color: $dark-grey;
 }
 
 .project-details {
