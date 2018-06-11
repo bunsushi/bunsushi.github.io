@@ -16,7 +16,8 @@ body {
   line-height: 2;
   letter-spacing: 1px;
   background-color: #f7f7f8;
-  position: relative; }
+  position: relative;
+  margin-top: 51px; }
 
 .container-fluid {
   margin: 0 10vw; }
@@ -74,9 +75,11 @@ a {
   background: linear-gradient(to right, #FFB91F, #fcac0a);
   background-size: cover;
   padding: 2vw 5vw;
-  min-height: 95vh;
+  min-height: 93vh;
   position: relative;
-  border: 2.5vw solid #fff; }
+  border-left: 2.5vw solid #fff;
+  border-right: 2.5vw solid #fff;
+  border-bottom: 2.5vw solid #fff; }
 
 .brand-cluster {
   position: absolute;
@@ -161,61 +164,106 @@ a {
   bottom: -5vw; }
 
 .glance-shape {
-  display: inline-block;
   text-align: center; }
   .glance-shape p {
     font-size: 18px; }
 
+#glance-triangle {
+  position: absolute;
+  left: 0;
+  width: 0px;
+  height: 0px;
+  border-style: inset;
+  border-width: 0 15vw 25vw 15vw;
+  border-color: transparent transparent #fff transparent;
+  float: left;
+  transform: rotate(360deg); }
+  #glance-triangle p {
+    text-align: center;
+    top: 15vw;
+    left: -7vw;
+    position: relative;
+    width: 15vw;
+    height: 25vw;
+    margin: 0px; }
+
+#glance-square {
+  position: absolute;
+  left: -5vw;
+  top: 20vh;
+  background-color: #267871;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 30vw;
+  height: 30vw;
+  opacity: .9; }
+  #glance-square p {
+    color: #fcac0a;
+    display: table-cell;
+    width: 30vw;
+    height: 30vw;
+    vertical-align: middle; }
+
+#glance-diamond {
+  position: absolute;
+  right: -5vw;
+  background-color: #fff;
+  border-radius: 10px;
+  transform: rotate(45deg);
+  overflow: hidden;
+  width: 23vw;
+  height: 23vw;
+  opacity: .9;
+  box-shadow: 10px 10px #267871; }
+  #glance-diamond p {
+    color: #444;
+    display: table-cell;
+    transform: rotate(-45deg);
+    padding-top: 5vw;
+    width: 23vw;
+    height: 23vw;
+    vertical-align: middle; }
+
 #glance-circle {
-  width: 25vw;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 28vw;
+  height: 28vw;
   border-radius: 100%;
   background-color: #FFB91F;
-  overflow: hidden; }
+  overflow: hidden;
+  opacity: .95; }
   #glance-circle p {
     color: #fff;
     display: table-cell;
-    width: 25vw;
-    height: 25vw;
+    width: 28vw;
+    height: 28vw;
     vertical-align: middle;
-    padding: 0 10%; }
+    padding: 0 5vw; }
 
-#glance-circle:before {
-  content: '';
-  padding-top: 100%; }
-
-#glance-triangle {
-  width: 0;
-  height: 0;
-  border-bottom: 25vw solid #fff;
-  border-right: 12vw solid transparent;
-  border-left: 12vw solid transparent; }
-  #glance-triangle p {
-    display: table-cell;
-    width: 25vw;
-    height: 25vw;
-    vertical-align: middle;
-    padding: 0 10%; }
-
-#glance-square {
-  background-color: #267871;
-  border-radius: 5px;
+#glance-circle-2 {
+  position: absolute;
+  top: 40vh;
+  left: 78%;
+  transform: translateX(-85%);
+  width: 23vw;
+  height: 23vw;
+  border-radius: 100%;
+  background-color: #136a8a;
   overflow: hidden;
-  width: 25vw; }
-  #glance-square p {
+  opacity: .9; }
+  #glance-circle-2 p {
     color: #FFB91F;
     display: table-cell;
-    width: 25vw;
-    height: 25vw;
+    width: 23vw;
+    height: 23vw;
     vertical-align: middle;
-    padding: 0 10%; }
-
-#glance-square::before {
-  content: '';
-  padding-top: 100%;
-  float: left; }
+    padding: 0 4vw; }
 
 #glance {
-  position: relative; }
+  position: relative;
+  height: 150vh; }
 
 #glance::before {
   content: "";

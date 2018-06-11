@@ -32,6 +32,7 @@ body {
     letter-spacing: 1px;
     background-color: $background;
     position: relative;
+    margin-top: 51px;
 }
 
 .container-fluid {
@@ -109,9 +110,11 @@ a {
     background: linear-gradient(to right, $primary-theme, $primary-accent);
     background-size: cover;
     padding: 2vw 5vw;
-    min-height: 95vh;
+    min-height: 93vh;
     position: relative;
-    border: 2.5vw solid #fff;
+    border-left: 2.5vw solid #fff;
+    border-right: 2.5vw solid #fff;
+    border-bottom: 2.5vw solid #fff;
 }
 
 .brand-cluster {
@@ -235,80 +238,129 @@ a {
 // AT A GLANCE
 
 .glance-shape {
-    display: inline-block;
+    // position: relative;
+    // display: inline-block;
     // width: 33%;
     text-align: center;
-    // padding: 20px;
 
     p {
         font-size: 18px;
     }
 }
 
+#glance-triangle {
+    position: absolute;
+    left: 0;
+    width: 0px;
+    height: 0px;
+    border-style: inset;
+    border-width: 0 15vw 25vw 15vw;
+    border-color: transparent transparent #fff transparent;
+    float: left;
+    transform:rotate(360deg);
+
+    p {
+        text-align: center;
+        top: 15vw;
+        left: -7vw;
+        position: relative;
+        width: 15vw;
+        height: 25vw;
+        margin: 0px;
+    }
+}
+
+#glance-square {
+    position: absolute;
+    left: -5vw;
+    top: 20vh;
+    background-color: $secondary-theme;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 30vw;
+    height: 30vw;
+    opacity: .9;
+
+    p {
+        color: $primary-accent;
+        display: table-cell;
+        width: 30vw;
+        height: 30vw;
+        vertical-align: middle;
+    }
+}
+
+#glance-diamond {
+    position: absolute;
+    right: -5vw;
+    background-color: #fff;
+    border-radius: 10px;
+    transform: rotate(45deg);
+    overflow: hidden;
+    width: 23vw;
+    height: 23vw;
+    opacity: .9;
+    box-shadow: 10px 10px $secondary-theme;
+
+    p {
+        color: $medium-grey;
+        display: table-cell;
+        transform: rotate(-45deg);
+        padding-top: 5vw;
+        width: 23vw;
+        height: 23vw;
+        vertical-align: middle;
+    }
+}
+
 #glance-circle {
-    width: 25vw;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 28vw;
+    height: 28vw;
     border-radius: 100%;
     background-color: $primary-theme;
     overflow: hidden;
+    opacity: .95;
     // box-shadow: 1vw 1vw $primary-accent;
 
     p {    
         color: #fff;
         display: table-cell;
-        width: 25vw;
-        height: 25vw;
+        width: 28vw;
+        height: 28vw;
         vertical-align: middle;
-        padding: 0 10%;
+        padding: 0 5vw;
     }
 }
 
-#glance-circle:before {
-    content: '';
-    padding-top: 100%;
-}
-
-#glance-triangle {
-    // position: absolute;
-    // left: 50%;
-    width: 0;
-    height: 0;
-    border-bottom: 25vw solid #fff;
-    border-right: 12vw solid transparent;
-    border-left: 12vw solid transparent;
-
-    p {
-        display: table-cell;
-        width: 25vw;
-        height: 25vw;
-        vertical-align: middle;
-        padding: 0 10%;
-    }
-}
-
-#glance-square {
-    background-color: $secondary-theme;
-    border-radius: 5px;
+#glance-circle-2 {
+    position: absolute;
+    top: 40vh;
+    left: 78%;
+    transform: translateX(-85%);
+    width: 23vw;
+    height: 23vw;
+    border-radius: 100%;
+    background-color: $secondary-accent;
     overflow: hidden;
-    width: 25vw;
+    opacity: .9;
+    // box-shadow: 1vw 1vw $primary-accent;
 
-    p {
+    p {    
         color: $primary-theme;
         display: table-cell;
-        width: 25vw;
-        height: 25vw;
+        width: 23vw;
+        height: 23vw;
         vertical-align: middle;
-        padding: 0 10%;
+        padding: 0 4vw;
     }
-}
-
-#glance-square::before {
-    content: '';
-    padding-top: 100%;
-    float: left;
 }
 
 #glance {
     position: relative;
+    height: 150vh;
 }
 
 #glance::before {
