@@ -50,8 +50,8 @@ $(document).ready(function () {
         },
         {
             name: "Pie a la Node",
-            image: "assets/images/pie-a-la-node.PNG",
-            square_image: "assets/images/pie-a-la-node-square.PNG",
+            image: "assets/images/pie-a-la-node.png",
+            square_image: "assets/images/pie-a-la-node-square.png",
             url: "https://piealanode.herokuapp.com",
             repository: "https://github.com/bunsushi/pie-a-la-node",
             featured: false,

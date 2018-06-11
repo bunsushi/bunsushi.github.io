@@ -46,6 +46,19 @@ a {
 .hideme {
   padding: 20vh 0; }
 
+#back-for-air {
+  height: 75px;
+  width: 75px;
+  position: fixed;
+  bottom: 2.5vw;
+  right: 2.5vw;
+  background-color: #fe22c3;
+  text-align: center;
+  border-radius: 50%;
+  z-index: 20; }
+  #back-for-air a {
+    color: #fff; }
+
 /* NAVIGATION */
 .container-navbar {
   margin: 0 2.5vw; }
@@ -168,25 +181,6 @@ a {
   .glance-shape p {
     font-size: 18px; }
 
-#glance-triangle {
-  position: absolute;
-  left: 0;
-  width: 0px;
-  height: 0px;
-  border-style: inset;
-  border-width: 0 15vw 25vw 15vw;
-  border-color: transparent transparent #fff transparent;
-  float: left;
-  transform: rotate(360deg); }
-  #glance-triangle p {
-    text-align: center;
-    top: 15vw;
-    left: -7vw;
-    position: relative;
-    width: 15vw;
-    height: 25vw;
-    margin: 0px; }
-
 #glance-square {
   position: absolute;
   left: -5vw;
@@ -194,72 +188,90 @@ a {
   background-color: #267871;
   border-radius: 10px;
   overflow: hidden;
-  width: 30vw;
-  height: 30vw;
+  width: 28vw;
+  height: 28vw;
   opacity: .9; }
   #glance-square p {
-    color: #fcac0a;
+    color: #FFB91F;
     display: table-cell;
-    width: 30vw;
-    height: 30vw;
+    width: 28vw;
+    height: 28vw;
+    padding: 4vw;
     vertical-align: middle; }
 
-#glance-diamond {
+#glance-triangle {
   position: absolute;
-  right: -5vw;
-  background-color: #fff;
-  border-radius: 10px;
-  transform: rotate(45deg);
-  overflow: hidden;
-  width: 23vw;
-  height: 23vw;
-  opacity: .9;
-  box-shadow: 10px 10px #267871; }
-  #glance-diamond p {
-    color: #444;
-    display: table-cell;
-    transform: rotate(-45deg);
-    padding-top: 5vw;
-    width: 23vw;
-    height: 23vw;
-    vertical-align: middle; }
+  top: 40vh;
+  left: 16vw;
+  width: 0px;
+  height: 0px;
+  border-style: inset;
+  border-width: 0 12vw 22vw 12vw;
+  border-color: transparent transparent #fff transparent;
+  transform: rotate(360deg);
+  opacity: .95;
+  z-index: 10; }
 
 #glance-circle {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  width: 28vw;
-  height: 28vw;
+  width: 30vw;
+  height: 30vw;
   border-radius: 100%;
   background-color: #FFB91F;
   overflow: hidden;
-  opacity: .95; }
+  opacity: .95;
+  z-index: 8; }
   #glance-circle p {
     color: #fff;
     display: table-cell;
-    width: 28vw;
-    height: 28vw;
+    width: 30vw;
+    height: 30vw;
     vertical-align: middle;
-    padding: 0 5vw; }
+    padding: 0 4vw; }
 
 #glance-circle-2 {
   position: absolute;
   top: 40vh;
   left: 78%;
   transform: translateX(-85%);
-  width: 23vw;
-  height: 23vw;
+  width: 20vw;
+  height: 20vw;
   border-radius: 100%;
   background-color: #136a8a;
   overflow: hidden;
-  opacity: .9; }
+  opacity: .9;
+  z-index: 9; }
   #glance-circle-2 p {
     color: #FFB91F;
+    font-size: 16px;
     display: table-cell;
+    width: 20vw;
+    height: 20vw;
+    vertical-align: middle;
+    padding: 0 3vw; }
+
+#glance-diamond {
+  position: absolute;
+  right: -1vw;
+  background-color: #fff;
+  border-radius: 10px;
+  transform: rotate(45deg);
+  overflow: hidden;
+  width: 23vw;
+  height: 23vw;
+  box-shadow: 10px 10px #267871; }
+  #glance-diamond p {
+    color: #444;
+    display: table-cell;
+    transform: rotate(-45deg);
+    padding-top: 2vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
     width: 23vw;
     height: 23vw;
-    vertical-align: middle;
-    padding: 0 4vw; }
+    vertical-align: middle; }
 
 #glance {
   position: relative;
@@ -466,12 +478,11 @@ a {
 
 #footer {
   background-color: #267871;
-  background: linear-gradient(to bottom, #267871, #136a8a);
   padding: 10vh 0; }
   #footer img {
     height: 20vh; }
   #footer p {
-    color: #fff; }
+    color: #cbf8e2; }
 
 #brand-footer {
   text-align: center; }

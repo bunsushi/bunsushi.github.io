@@ -4,6 +4,7 @@ $primary-theme: #FFB91F;
 $primary-accent: rgb(252, 172, 10);
 $secondary-theme: #267871;
 $secondary-accent: #136a8a;
+// $secondary-accent: #007bff;
 $accent-theme: #fe22c3;
 $background: #f7f7f8;
 $dark-grey: #333;
@@ -67,6 +68,22 @@ a {
 
 .hideme {
     padding: 20vh 0;
+}
+
+#back-for-air {
+    height: 75px;
+    width: 75px;
+    position: fixed;
+    bottom: 2.5vw;
+    right: 2.5vw;
+    background-color: $accent-theme;
+    text-align: center;
+    border-radius:50%;
+    z-index: 20;
+
+    a {
+        color: #fff;
+    }
 }
 
 /* NAVIGATION */
@@ -248,28 +265,6 @@ a {
     }
 }
 
-#glance-triangle {
-    position: absolute;
-    left: 0;
-    width: 0px;
-    height: 0px;
-    border-style: inset;
-    border-width: 0 15vw 25vw 15vw;
-    border-color: transparent transparent #fff transparent;
-    float: left;
-    transform:rotate(360deg);
-
-    p {
-        text-align: center;
-        top: 15vw;
-        left: -7vw;
-        position: relative;
-        width: 15vw;
-        height: 25vw;
-        margin: 0px;
-    }
-}
-
 #glance-square {
     position: absolute;
     left: -5vw;
@@ -277,61 +272,64 @@ a {
     background-color: $secondary-theme;
     border-radius: 10px;
     overflow: hidden;
-    width: 30vw;
-    height: 30vw;
+    width: 28vw;
+    height: 28vw;
     opacity: .9;
 
     p {
-        color: $primary-accent;
+        color: $primary-theme;
         display: table-cell;
-        width: 30vw;
-        height: 30vw;
+        width: 28vw;
+        height: 28vw;
+        padding: 4vw;
         vertical-align: middle;
     }
 }
 
-#glance-diamond {
+#glance-triangle {
     position: absolute;
-    right: -5vw;
-    background-color: #fff;
-    border-radius: 10px;
-    transform: rotate(45deg);
-    overflow: hidden;
-    width: 23vw;
-    height: 23vw;
-    opacity: .9;
-    box-shadow: 10px 10px $secondary-theme;
+    top: 40vh;
+    left: 16vw;
+    width: 0px;
+    height: 0px;
+    border-style: inset;
+    border-width: 0 12vw 22vw 12vw;
+    border-color: transparent transparent #fff transparent;
+    transform:rotate(360deg);
+    opacity: .95;
+    z-index: 10;
 
-    p {
-        color: $medium-grey;
-        display: table-cell;
-        transform: rotate(-45deg);
-        padding-top: 5vw;
-        width: 23vw;
-        height: 23vw;
-        vertical-align: middle;
-    }
+    // p {
+    //     text-align: center;
+    //     top: 15vw;
+    //     left: -7vw;
+    //     position: relative;
+    //     width: 15vw;
+    //     height: 25vw;
+    //     margin: 0px;
+    // }
 }
 
 #glance-circle {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    width: 28vw;
-    height: 28vw;
+    width: 30vw;
+    height: 30vw;
     border-radius: 100%;
     background-color: $primary-theme;
     overflow: hidden;
     opacity: .95;
+    z-index: 8;
     // box-shadow: 1vw 1vw $primary-accent;
 
     p {    
         color: #fff;
         display: table-cell;
-        width: 28vw;
-        height: 28vw;
+        width: 30vw;
+        height: 30vw;
         vertical-align: middle;
-        padding: 0 5vw;
+        padding: 0 4vw;
     }
 }
 
@@ -340,21 +338,47 @@ a {
     top: 40vh;
     left: 78%;
     transform: translateX(-85%);
-    width: 23vw;
-    height: 23vw;
+    width: 20vw;
+    height: 20vw;
     border-radius: 100%;
     background-color: $secondary-accent;
     overflow: hidden;
     opacity: .9;
+    z-index: 9;
     // box-shadow: 1vw 1vw $primary-accent;
 
     p {    
         color: $primary-theme;
+        font-size: 16px;
         display: table-cell;
+        width: 20vw;
+        height: 20vw;
+        vertical-align: middle;
+        padding: 0 3vw;
+    }
+}
+
+#glance-diamond {
+    position: absolute;
+    right: -1vw;
+    background-color: #fff;
+    border-radius: 10px;
+    transform: rotate(45deg);
+    overflow: hidden;
+    width: 23vw;
+    height: 23vw;
+    box-shadow: 10px 10px $secondary-theme;
+
+    p {
+        color: $medium-grey;
+        display: table-cell;
+        transform: rotate(-45deg);
+        padding-top: 2vw;
+        padding-left: 2vw;
+        padding-right: 2vw;
         width: 23vw;
         height: 23vw;
         vertical-align: middle;
-        padding: 0 4vw;
     }
 }
 
@@ -642,7 +666,7 @@ a {
 
 #footer {
     background-color: $secondary-theme;
-    background: linear-gradient(to bottom, $secondary-theme, $secondary-accent);
+    // background: linear-gradient(to bottom, $secondary-theme, $secondary-accent);
     padding: 10vh 0;
 
     img {
@@ -650,7 +674,7 @@ a {
     }
 
     p {
-        color: #fff;
+        color: rgb(203, 248, 226);
     }
 }
 
