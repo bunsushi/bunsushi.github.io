@@ -214,11 +214,11 @@ a {
   #glance-triangle p {
     text-align: center;
     color: #444;
-    display: block;
     position: relative;
     right: 6vw;
     top: 23vh;
     width: 12vw;
+    height: 12vw;
     margin: 0px; }
 
 #glance-circle {
