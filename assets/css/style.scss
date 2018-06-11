@@ -299,15 +299,17 @@ a {
     opacity: .95;
     z-index: 10;
 
-    // p {
-    //     text-align: center;
-    //     top: 15vw;
-    //     left: -7vw;
-    //     position: relative;
-    //     width: 15vw;
-    //     height: 25vw;
-    //     margin: 0px;
-    // }
+    p {
+        text-align: center;
+        color: $medium-grey;
+        display: block;
+        // border: 1px solid $dark-grey;
+        position: relative;
+        right: 6vw;
+        top: 23vh;
+        width: 12vw;
+        margin: 0px;
+    }
 }
 
 #glance-circle {

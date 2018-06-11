@@ -47,7 +47,7 @@ $(document).ready(function () {
             featured: true,
             description: "A daily practice journal to help you achieve your goals.",
             fulldescription: "Designed original concept." + "<br><br>" + "Data visualization of tasks",
-            tags: ["Full Stack", "HTML/CSS", "Bootstrap", "JavaScript", "jQuery", "Node", "Express", "MySQL", "Authentication"]
+            tags: ["Full Stack", "HTML/CSS", "Handlebars", "Bootstrap", "JavaScript", "jQuery", "Node", "Express", "MySQL", "Authentication"]
         },
         {
             name: "Pie a la Node",

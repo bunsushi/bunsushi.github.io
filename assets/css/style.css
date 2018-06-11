@@ -211,6 +211,15 @@ a {
   transform: rotate(360deg);
   opacity: .95;
   z-index: 10; }
+  #glance-triangle p {
+    text-align: center;
+    color: #444;
+    display: block;
+    position: relative;
+    right: 6vw;
+    top: 23vh;
+    width: 12vw;
+    margin: 0px; }
 
 #glance-circle {
   position: absolute;
