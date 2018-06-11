@@ -217,10 +217,9 @@ a {
     color: #444;
     position: relative;
     right: 6vw;
-    top: 23vh;
+    top: 12vw;
     width: 12vw;
-    height: 12vw;
-    margin: 0px; }
+    height: 12vw; }
 
 #glance-circle {
   position: absolute;
