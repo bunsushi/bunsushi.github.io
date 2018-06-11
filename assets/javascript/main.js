@@ -97,8 +97,8 @@ $(document).ready(function () {
             repository: "https://github.com/bunsushi/Cinemappr",
             featured: true,
             description: "An interactive movie theater location and showtime listing application integrated with Google Maps.",
-            fulldescription: "Designed original concept." + "<br><br>" + "Data visualization of tasks",
-            tags: ["Full Stack", "HTML/CSS", "Bootstrap", "JavaScript", "jQuery", "Node.js", "Express", "Sass", "API"]
+            fulldescription: "This project used Gracenote's Local Theaters API to retrieve information on movies playing in theaters within a 5 mile radius of a zipcode. We used the Google Maps API to plot the theaters." + "<br><br>" + "My primary role was to convert the Theaters API response, which was organized by movie title, to an array of objects organized by movie theater, with individual movies and showtimes nested." + "<br><br>" + "I worked on a team of four developers. I was responsible for the original idea and front-end development.",
+            tags: ["Full Stack", "HTML/CSS", "Bootstrap", "JavaScript", "jQuery", "Node", "Express", "Sass", "API"]
         },
         {
             name: "SEPTA Trolley Tracker",
