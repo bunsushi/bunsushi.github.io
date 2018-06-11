@@ -46,7 +46,8 @@ $(document).ready(function () {
             repository: "https://github.com/bunsushi/sadhana",
             featured: true,
             description: "A daily practice journal to help you achieve your goals.",
-            tags: ["Express.js, Node.js, MySQL"]
+            fulldescription: "Designed original concept." + "<br><br>" + "Data visualization of tasks",
+            tags: ["Full Stack", "HTML/CSS", "Bootstrap", "JavaScript", "jQuery", "Node", "Express", "MySQL", "Authentication"]
         },
         {
             name: "Pie a la Node",
@@ -56,7 +57,7 @@ $(document).ready(function () {
             repository: "https://github.com/bunsushi/pie-a-la-node",
             featured: false,
             description: "DIY pie menu generator with MySQL.",
-            tags: ["Express.js, Node.js, MySQL"]
+            tags: ["Express.js", "Node.js", "MySQL"]
         },
         {
             name: "Bash Boutique",
@@ -76,7 +77,7 @@ $(document).ready(function () {
             repository: "https://github.com/bunsushi/hey-LIRI",
             featured: false,
             description: "A simple command-line application.",
-            tags: ["Node.js", "Twitter API", "Spotify API"]
+            tags: ["Node.js", "API"]
         },
         {
             name: "@mesobotamia",
@@ -86,7 +87,7 @@ $(document).ready(function () {
             repository: "https://github.com/bunsushi/Mesobotamia",
             featured: false,
             description: "A Twitter bot: esoteric wisdom and questionable advice from your friendly neighborhood Sumerian.",
-            tags: ["JavaScript", "jQuery", "Node.js", "Twitter API"]
+            tags: ["JavaScript", "jQuery", "Node.js", "API"]
         },
         {
             name: "Cinemapp.r",
@@ -96,7 +97,8 @@ $(document).ready(function () {
             repository: "https://github.com/bunsushi/Cinemappr",
             featured: true,
             description: "An interactive movie theater location and showtime listing application integrated with Google Maps.",
-            tags: ["HTML/CSS", "Bootstrap", "JavaScript", "jQuery", "Node.js", "Express", "Sass", "Google Maps API", "Gracenote API"]
+            fulldescription: "Designed original concept." + "<br><br>" + "Data visualization of tasks",
+            tags: ["Full Stack", "HTML/CSS", "Bootstrap", "JavaScript", "jQuery", "Node.js", "Express", "Sass", "API"]
         },
         {
             name: "SEPTA Trolley Tracker",
@@ -116,7 +118,7 @@ $(document).ready(function () {
             repository: "https://github.com/bunsushi/Giphy-RXN",
             featured: false,
             description: "Giphy RXN is a simple search tool for discovering gifs using the Giphy API.",
-            tags: ["HTML/CSS", "Bootstrap", "JavaScript", "jQuery", "Giphy API"]
+            tags: ["HTML/CSS", "Bootstrap", "JavaScript", "jQuery", "API"]
         },
         {
             name: "NYT Article Search",
@@ -162,22 +164,39 @@ $(document).ready(function () {
     // GENERATE FEATURED PROJECTS
     function displayFeaturedProjects() {
         for (var i = 0; i < featuredProjects.length; i++) {
+            // Link to deployed project
             var featuredProjectLink = $("<a>");
             featuredProjectLink.attr("target", "_blank");
             featuredProjectLink.attr("href", featuredProjects[i].url);
 
+            // Link to GitHub repository
             var githubLink = $("<a>");
             githubLink.attr("target", "_blank");
             githubLink.attr("href", featuredProjects[i].repository);
 
+            // Container div for project
             var projectContainer = $("<div>");
             projectContainer.addClass("project-container");
 
+            // Container holder for image
+            var imageHolder = $("<div>");
+            imageHolder.addClass("featured-image");
+
+            // Container for additional project information
+            var infoHolder = $("<div>");
+            infoHolder.addClass("more-information");
+
+            var moreDescription = $("<p>");
+            moreDescription.append(featuredProjects[i].fulldescription);
+            infoHolder.append(moreDescription);
+
+            // Display image for featured project
             var displayFeaturedProjects = $("<img>");
             displayFeaturedProjects.attr("src", featuredProjects[i].image);
-            displayFeaturedProjects.addClass("featured-image");
 
-            projectContainer.append(displayFeaturedProjects);
+            imageHolder.append(displayFeaturedProjects);
+            imageHolder.append(infoHolder);
+            projectContainer.append(imageHolder);
 
             // Container for project details
             var projectDetails = $("<div>");
@@ -207,17 +226,21 @@ $(document).ready(function () {
             projectDetails.append(projectDescription);
             projectDetails.append(featuredProjectLink);
             projectDetails.append(githubLink);
+
+            // Tag container
+            var tagContainer = $("<div>");
+            tagContainer.addClass("tech-container");
+
+            // Technology tags
+            for (var j = 0; j < featuredProjects[i].tags.length; j++) {
+                var techTag = $("<div>");
+                techTag.addClass("tech-tag");
+                techTag.text(featuredProjects[i].tags[j]);
+                tagContainer.append(techTag);
+            }
+
+            projectDetails.append(tagContainer);
             projectContainer.append(projectDetails);
-
-
-
-            // highlightTitle.append(projectTitle);
-            // highlightTitle.append(projectDescription);
-            // highlightTitle.append(featuredProjectLink);
-            // highlightTitle.append(githubLink);
-            // highlight.append(highlightTitle);
-
-            // projectContainer.append(highlight);
 
             if (featuredProjects[i].featured === true) {
                 $("#projects").append(projectContainer);

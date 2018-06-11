@@ -439,11 +439,46 @@ a {
 .featured-image {
     width: 55%;
     overflow: hidden;
+    background-color: $dark-grey;
+    position: relative;
+
+    img {
+        position: relative;
+        width: 100%;
+        transition: opacity 0.6s ease-in-out;
+        opacity: 1;
+    }
+
+    .more-information {
+        visibility: hidden;
+    }
 }
 
 .featured-image:hover {
-    cursor: pointer;
-    background-color: $dark-grey;
+    img {
+        opacity: .1;
+    }
+
+    .more-information {
+        visibility: visible;
+        width: 100%;
+    }
+}
+
+.more-information {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    p {
+        color: #fff;
+        display: block;
+        margin: 2.5vw;
+        text-align: center;
+        padding: 50px;
+        border: 1px solid $primary-theme;
+    }
 }
 
 .project-details {
@@ -506,6 +541,18 @@ a {
 
 .more-portfolio:hover {
     background-color: $primary-accent;
+}
+
+.tech-container {
+    margin-top: 2vh;
+}
+
+.tech-tag {
+    display: inline-block;
+    background-color: $background;
+    color: $primary-theme;
+    padding: 5px 10px;
+    margin: 5px;
 }
 
 // OTHER PROJECTS
