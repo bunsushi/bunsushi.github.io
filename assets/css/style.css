@@ -322,7 +322,6 @@ a {
 
 .featured-image {
   width: 55%;
-  overflow: hidden;
   background-color: #333;
   position: relative; }
   .featured-image img {
@@ -337,10 +336,12 @@ a {
   opacity: .1; }
 .featured-image:hover .more-information {
   visibility: visible;
-  width: 100%; }
+  width: 100%;
+  overflow: scroll; }
 
 .more-information {
   position: absolute;
+  height: 100%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); }
