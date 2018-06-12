@@ -46,7 +46,7 @@ $(document).ready(function () {
             repository: "https://github.com/bunsushi/sadhana",
             featured: true,
             description: "A daily practice journal to help you achieve your goals.",
-            fulldescription: "Designed original concept." + "<br><br>" + "Data visualization of tasks",
+            fulldescription: "Sadhana is a personal productivity application for making goals into habits and keeping track of daily tasks, plus a pomodoro timer for when it's time to focus. Sadhana encourages you to work towards goals by automatically generating habit goals as tasks on the days you want and creates a responsive visual record of your progress at the top of the page." + "<br><br>" + "I worked on a team of three developers. I was responsible for the original idea and both front-end and back-end development. I spent most of my time developing the database to save and update an individual's goal habits and daily tasks and rendering that data on the DOM in an intuitive and interactive manner. I also designed the UI/UX for the application." + "<br><br>" + "We used the Node package Passport for user authentication, which I especially liked because it hashed user passwords within our database.",
             tags: ["Full Stack", "HTML/CSS", "Handlebars", "Bootstrap", "JavaScript", "jQuery", "Node", "Express", "MySQL", "Authentication"]
         },
         {
@@ -97,7 +97,7 @@ $(document).ready(function () {
             repository: "https://github.com/bunsushi/Cinemappr",
             featured: true,
             description: "An interactive movie theater location and showtime listing application integrated with Google Maps.",
-            fulldescription: "This project used Gracenote's Local Theaters API to retrieve information on movies playing in theaters within a 5 mile radius of a zipcode. We used the Google Maps API to plot the theaters." + "<br><br>" + "My primary role was to convert the Theaters API response, which was organized by movie title, to an array of objects organized by movie theater, with individual movies and showtimes nested." + "<br><br>" + "I worked on a team of four developers. I was responsible for the original idea and front-end development.",
+            fulldescription: "Cinemapp.r used Gracenote's Local Theaters API to retrieve information on movies playing in theaters within a 5 mile radius of a zipcode. We used the Google Maps API to plot the theaters." + "<br><br>" + "My primary role was to convert the Theaters API response, which was organized by movie title, to an array of objects organized by movie theater, with individual movies and showtimes nested. I also narrowed search results to an individual movie and/or theater and made the location pins interactive by displaying the corresponding theater information when clicked." + "<br><br>" + "I worked on a team of four developers. I was responsible for the original idea and front-end development.",
             tags: ["Full Stack", "HTML/CSS", "Bootstrap", "JavaScript", "jQuery", "Node", "Express", "Sass", "API"]
         },
         {
