@@ -442,7 +442,6 @@ a {
     width: 55%;
     background-color: $dark-grey;
     position: relative;
-    // overflow: scroll;
 
     img {
         position: relative;
@@ -464,7 +463,7 @@ a {
     .more-information {
         visibility: visible;
         width: 100%;
-        overflow: scroll;
+        overflow: auto;
     }
 }
 

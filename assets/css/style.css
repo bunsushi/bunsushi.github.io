@@ -337,7 +337,7 @@ a {
 .featured-image:hover .more-information {
   visibility: visible;
   width: 100%;
-  overflow: scroll; }
+  overflow: auto; }
 
 .more-information {
   position: absolute;
