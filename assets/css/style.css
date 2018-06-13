@@ -270,7 +270,8 @@ a {
   overflow: hidden;
   width: 23vw;
   height: 23vw;
-  box-shadow: 10px 10px #267871; }
+  box-shadow: 10px 10px #267871;
+  opacity: .9; }
   #glance-diamond p {
     color: #444;
     display: table-cell;
