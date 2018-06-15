@@ -272,15 +272,15 @@ a {
     background-color: $secondary-theme;
     border-radius: 10px;
     overflow: hidden;
-    width: 28vw;
-    height: 28vw;
+    width: 30vw;
+    height: 30vw;
     opacity: .9;
 
     p {
         color: $primary-theme;
         display: table-cell;
-        width: 28vw;
-        height: 28vw;
+        width: 30vw;
+        height: 30vw;
         padding: 4vw;
         vertical-align: middle;
     }
@@ -316,8 +316,8 @@ a {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    width: 30vw;
-    height: 30vw;
+    width: 31vw;
+    height: 31vw;
     border-radius: 100%;
     background-color: $primary-theme;
     overflow: hidden;
@@ -328,8 +328,8 @@ a {
     p {    
         color: #fff;
         display: table-cell;
-        width: 30vw;
-        height: 30vw;
+        width: 31vw;
+        height: 31vw;
         vertical-align: middle;
         padding: 0 4vw;
     }
