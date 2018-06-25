@@ -68,6 +68,7 @@ a {
 
 .hideme {
     padding: 20vh 0;
+    opacity: 0;
 }
 
 #back-for-air {
@@ -80,6 +81,7 @@ a {
     text-align: center;
     border-radius:50%;
     z-index: 20;
+    visibility: hidden;
 
     a {
         color: #fff;
@@ -255,7 +257,7 @@ a {
 // AT A GLANCE
 
 .glance-shape {
-    // position: relative;
+    position: relative;
     // display: inline-block;
     // width: 33%;
     text-align: center;
@@ -272,9 +274,11 @@ a {
     background-color: $secondary-theme;
     border-radius: 10px;
     overflow: hidden;
-    width: 30vw;
-    height: 30vw;
+    width: 31vw;
+    height: 31vw;
     opacity: .9;
+    animation-name: drop-square;
+    animation-duration: 4s;
 
     p {
         color: $primary-theme;
@@ -286,9 +290,14 @@ a {
     }
 }
 
+@keyframes drop-square {
+    0%   {top:0px;}
+    100% {top:20vh;}
+}
+
 #glance-triangle {
     position: absolute;
-    top: 40vh;
+    top: 45vh;
     left: 16vw;
     width: 0px;
     height: 0px;
@@ -298,6 +307,8 @@ a {
     transform:rotate(360deg);
     opacity: .95;
     z-index: 10;
+    animation-name: drop-triangle;
+    animation-duration: 2s;
 
     p {
         text-align: center;
@@ -312,9 +323,14 @@ a {
     }
 }
 
+@keyframes drop-triangle {
+    0%   {top:20vh;}
+    100% {top:45vh;}
+}
+
 #glance-circle {
     position: absolute;
-    left: 50%;
+    left: 49%;
     transform: translateX(-50%);
     width: 31vw;
     height: 31vw;
@@ -323,6 +339,8 @@ a {
     overflow: hidden;
     opacity: .95;
     z-index: 8;
+    animation-name: drop-circle;
+    animation-duration: 3s;
     // box-shadow: 1vw 1vw $primary-accent;
 
     p {    
@@ -333,6 +351,11 @@ a {
         vertical-align: middle;
         padding: 0 4vw;
     }
+}
+
+@keyframes drop-circle {
+    0%   {top:20vh;}
+    100% {top:0;}
 }
 
 #glance-circle-2 {
@@ -346,7 +369,9 @@ a {
     background-color: $secondary-accent;
     overflow: hidden;
     opacity: .9;
-    z-index: 9;
+    z-index: 9; 
+    animation-name: drop-circle-2;
+    animation-duration: 2s;
     // box-shadow: 1vw 1vw $primary-accent;
 
     p {    
@@ -360,6 +385,11 @@ a {
     }
 }
 
+@keyframes drop-circle-2 {
+    0%   {top: 55vh; left: 85%;}
+    100% {left: 78%;}
+}
+
 #glance-diamond {
     position: absolute;
     right: -1vw;
@@ -367,22 +397,29 @@ a {
     border-radius: 10px;
     transform: rotate(45deg);
     overflow: hidden;
-    width: 23vw;
-    height: 23vw;
+    width: 25vw;
+    height: 25vw;
     box-shadow: 10px 10px $secondary-theme;
     opacity: .9;
+    animation-name: drop-diamond;
+    animation-duration: 3s;
 
     p {
         color: $medium-grey;
         display: table-cell;
         transform: rotate(-45deg);
-        padding-top: 2vw;
+        padding-top: 4vw;
         padding-left: 2vw;
         padding-right: 2vw;
-        width: 23vw;
-        height: 23vw;
+        width: 24vw;
+        height: 24vw;
         vertical-align: middle;
     }
+}
+
+@keyframes drop-diamond {
+    0%   {top: 10vh;}
+    100% {top: 0;}
 }
 
 #glance {

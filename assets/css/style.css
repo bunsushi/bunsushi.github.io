@@ -44,7 +44,8 @@ a {
   color: #FFB91F; }
 
 .hideme {
-  padding: 20vh 0; }
+  padding: 20vh 0;
+  opacity: 0; }
 
 #back-for-air {
   height: 75px;
@@ -55,7 +56,8 @@ a {
   background-color: #fe22c3;
   text-align: center;
   border-radius: 50%;
-  z-index: 20; }
+  z-index: 20;
+  visibility: hidden; }
   #back-for-air a {
     color: #fff; }
 
@@ -177,6 +179,7 @@ a {
   bottom: -5vw; }
 
 .glance-shape {
+  position: relative;
   text-align: center; }
   .glance-shape p {
     font-size: 18px; }
@@ -188,9 +191,11 @@ a {
   background-color: #267871;
   border-radius: 10px;
   overflow: hidden;
-  width: 30vw;
-  height: 30vw;
-  opacity: .9; }
+  width: 31vw;
+  height: 31vw;
+  opacity: .9;
+  animation-name: drop-square;
+  animation-duration: 4s; }
   #glance-square p {
     color: #FFB91F;
     display: table-cell;
@@ -199,9 +204,14 @@ a {
     padding: 4vw;
     vertical-align: middle; }
 
+@keyframes drop-square {
+  0% {
+    top: 0px; }
+  100% {
+    top: 20vh; } }
 #glance-triangle {
   position: absolute;
-  top: 40vh;
+  top: 45vh;
   left: 16vw;
   width: 0px;
   height: 0px;
@@ -210,7 +220,9 @@ a {
   border-color: transparent transparent #fff transparent;
   transform: rotate(360deg);
   opacity: .95;
-  z-index: 10; }
+  z-index: 10;
+  animation-name: drop-triangle;
+  animation-duration: 2s; }
   #glance-triangle p {
     text-align: center;
     font-size: 14px;
@@ -221,9 +233,14 @@ a {
     width: 12vw;
     height: 12vw; }
 
+@keyframes drop-triangle {
+  0% {
+    top: 20vh; }
+  100% {
+    top: 45vh; } }
 #glance-circle {
   position: absolute;
-  left: 50%;
+  left: 49%;
   transform: translateX(-50%);
   width: 31vw;
   height: 31vw;
@@ -231,7 +248,9 @@ a {
   background-color: #FFB91F;
   overflow: hidden;
   opacity: .95;
-  z-index: 8; }
+  z-index: 8;
+  animation-name: drop-circle;
+  animation-duration: 3s; }
   #glance-circle p {
     color: #fff;
     display: table-cell;
@@ -240,6 +259,11 @@ a {
     vertical-align: middle;
     padding: 0 4vw; }
 
+@keyframes drop-circle {
+  0% {
+    top: 20vh; }
+  100% {
+    top: 0; } }
 #glance-circle-2 {
   position: absolute;
   top: 40vh;
@@ -251,7 +275,9 @@ a {
   background-color: #136a8a;
   overflow: hidden;
   opacity: .9;
-  z-index: 9; }
+  z-index: 9;
+  animation-name: drop-circle-2;
+  animation-duration: 2s; }
   #glance-circle-2 p {
     color: #FFB91F;
     font-size: 16px;
@@ -261,6 +287,12 @@ a {
     vertical-align: middle;
     padding: 0 3vw; }
 
+@keyframes drop-circle-2 {
+  0% {
+    top: 55vh;
+    left: 85%; }
+  100% {
+    left: 78%; } }
 #glance-diamond {
   position: absolute;
   right: -1vw;
@@ -268,21 +300,28 @@ a {
   border-radius: 10px;
   transform: rotate(45deg);
   overflow: hidden;
-  width: 23vw;
-  height: 23vw;
+  width: 25vw;
+  height: 25vw;
   box-shadow: 10px 10px #267871;
-  opacity: .9; }
+  opacity: .9;
+  animation-name: drop-diamond;
+  animation-duration: 3s; }
   #glance-diamond p {
     color: #444;
     display: table-cell;
     transform: rotate(-45deg);
-    padding-top: 2vw;
+    padding-top: 4vw;
     padding-left: 2vw;
     padding-right: 2vw;
-    width: 23vw;
-    height: 23vw;
+    width: 24vw;
+    height: 24vw;
     vertical-align: middle; }
 
+@keyframes drop-diamond {
+  0% {
+    top: 10vh; }
+  100% {
+    top: 0; } }
 #glance {
   position: relative;
   height: 150vh; }

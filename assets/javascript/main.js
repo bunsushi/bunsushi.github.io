@@ -37,6 +37,23 @@ $(document).ready(function () {
             }
         });
 
+    $(window).scroll(function () {
+        var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+        $(".hideme").each(function () {
+            /* Check the location of each desired element */
+            var objectBottom = $(this).offset().top;
+
+            /* If the element is within bounds of the window, fade it in */
+            if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+                if ($(this).css("opacity") == 0) {
+                    $(this).fadeTo(3000, 1);
+                }
+            }
+        });
+    }).scroll(); //invoke scroll-handler on page-load
+
+    // TODO: If #glance section is visible, trigger shape animations by adding a new class
+
     var featuredProjects = [
         {
             name: "sadhana",
