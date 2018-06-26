@@ -56,6 +56,15 @@ $(document).ready(function () {
 
     var featuredProjects = [
         {
+            name: "Totes Ma Goats",
+            square_image: "assets/images/totes-ma-goats-square.png",
+            url: "https://totesmagoats.herokuapp.com",
+            repository: "https://github.com/bunsushi/totes-ma-goats",
+            featured: false,
+            description: "A very goat memory game.",
+            tags: ["HTML/CSS", "React", "Bootstrap", "JavaScript"]
+        },
+        {
             name: "sadhana",
             image: "assets/images/sadhana.png",
             square_image: "assets/images/sadhana-square.png",
@@ -268,9 +277,9 @@ $(document).ready(function () {
     // GENERATE OTHER PROJECTS
     function displayOtherProjects() {
         var projectStart = $("<div>");
-        projectStart.addClass("project-start");
+        projectStart.addClass("project-start project-summary");
 
-        $("#other-projects").append(projectStart);
+        // $("#other-projects").append(projectStart);
 
         for (var i = 0; i < featuredProjects.length; i++) {
             // Link to deployed project
@@ -333,7 +342,7 @@ $(document).ready(function () {
         }
 
         var projectEnd = $("<div>");
-        projectEnd.addClass("project-end");
+        // projectEnd.addClass("project-end project-summary");
 
         $("#other-projects").append(projectEnd);
 

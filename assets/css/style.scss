@@ -4,7 +4,7 @@ $primary-theme: #FFB91F;
 $primary-accent: rgb(252, 172, 10);
 $secondary-theme: #267871;
 $secondary-accent: #136a8a;
-// $secondary-accent: #007bff;
+$tertiary-accent: #007bff;
 $accent-theme: #fe22c3;
 $background: #f7f7f8;
 $dark-grey: #333;
@@ -606,20 +606,21 @@ a {
 
 #other-projects {
     margin-top: 20vh;
-    transform: rotate(45deg);
-    width: 70vw;
+    margin-left: 4vw;
+    // transform: rotate(45deg);
+    // width: 70vw;
 }
 
 .project-start {
-    display: inline-block;
     width: 25%;
-    height: 25px;
+    height: 100px;
     background-color: $secondary-theme;
 }
 
 .project-end {
     display: inline-block;
     width: 25%;
+    height: 25%;
     background-color: $accent-theme;
     border: 100px solid #f7f7f8;
     border-radius: 50%;
@@ -633,10 +634,11 @@ a {
 }
 
 .project-summary {
-    background-color: #fff;
     display: inline-block;
     width: 25%;
     position: relative;
+    transform: rotate(45deg);
+    margin-right: 10.4%;
 }
 
 .project-title {
@@ -690,16 +692,32 @@ a {
     }
 }
 
-.project-summary:nth-of-type(3n) .overlay {
+.project-summary:nth-of-type(5n+3) {
+    margin-right: 0;
+}
+
+.project-summary:nth-of-type(n+3) {
+    margin-top: -7%;
+}
+
+.project-summary:nth-of-type(5n+4) {
+    margin-left: 17.8%;
+}
+
+.project-summary:nth-of-type(4n) .overlay {
     background-color: $primary-theme;
 }
 
-.project-summary:nth-of-type(3n+1) .overlay {
+.project-summary:nth-of-type(4n+1) .overlay {
     background-color: $secondary-theme;
 }
 
-.project-summary:nth-of-type(3n+2) .overlay {
+.project-summary:nth-of-type(4n+2) .overlay {
     background-color: $accent-theme;
+}
+
+.project-summary:nth-of-type(4n+3) .overlay {
+    background-color: $tertiary-accent;
 }
 
 .other-links {
