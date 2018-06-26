@@ -717,7 +717,8 @@ a {
 }
 
 .project-summary:nth-of-type(4n+3) .overlay {
-    background-color: $tertiary-accent;
+    // background-color: $tertiary-accent;
+    background-color: $dark-grey;
 }
 
 .other-links {
