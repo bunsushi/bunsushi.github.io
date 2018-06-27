@@ -46,7 +46,7 @@ $(document).ready(function () {
             /* If the element is within bounds of the window, fade it in */
             if (objectBottom < windowBottom) { //object comes into view (scrolling down)
                 if ($(this).css("opacity") == 0) {
-                    $(this).fadeTo(3000, 1);
+                    $(this).fadeTo(2000, 1);
                 }
             }
         });
@@ -56,14 +56,34 @@ $(document).ready(function () {
 
     var featuredProjects = [
         {
+            name: "Gilgamesh Versus",
+            image: "assets/images/gilgamesh-versus.png",
+            square_image: "assets/images/gilgamesh-versus-square.png",
+            url: "https://github.com/bunsushi/Gilgamesh-Versus",
+            repository: "https://github.com/bunsushi/Gilgamesh-Versus",
+            featured: true,
+            description: "A browser-based role-playing game based on the ancient Mesopotamian story, the Epic of Gilgamesh. (Under development).",
+            fulldescription: "Play as Gilgamesh, rule the city of Uruk, fight demons and gods with your best friend, and contemplate the meaning of life." + "<br><br>" + "I worked on a team of three developers. I was responsible for the original idea and both front-end and back-end development.",
+            tags: ["Full Stack", "HTML/CSS", "React", "Bootstrap", "JavaScript", "Melon.js", "Node", "Express", "MongoDB", "Authentication"]
+        },
+        {
             name: "Totes Ma Goats",
             square_image: "assets/images/totes-ma-goats-square.png",
             url: "https://totesmagoats.herokuapp.com",
             repository: "https://github.com/bunsushi/totes-ma-goats",
             featured: false,
             description: "A very goat memory game.",
-            tags: ["HTML/CSS", "React", "Bootstrap", "JavaScript"]
+            tags: ["HTML/CSS", "React", "Bootstrap", "JavaScript", "Node"]
         },
+        // {
+        //     name: "Near East Bureau",
+        //     square_image: "assets/images/near-east-bureau-square.png",
+        //     url: "https://neareastbureau.herokuapp.com",
+        //     repository: "https://github.com/bunsushi/near-east-bureau",
+        //     featured: false,
+        //     description: "An interactive news aggregator for current events in the Middle East.",
+        //     tags: ["HTML/CSS", "Bootstrap", "JavaScript", "Node", "Express", "Web scraping", "Axios"]
+        // },
         {
             name: "sadhana",
             image: "assets/images/sadhana.png",
@@ -348,9 +368,9 @@ $(document).ready(function () {
 
     }
 
-    function generateProjectInfo() {
+    // function generateProjectInfo() {
 
-    }
+    // }
 
     displayFeaturedProjects();
 

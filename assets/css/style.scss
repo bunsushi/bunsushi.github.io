@@ -2,11 +2,11 @@
 
 $primary-theme: #FFB91F;
 $primary-accent: rgb(252, 172, 10);
-$secondary-theme: #267871;
+$secondary-theme: #38806b;
 $secondary-accent: #136a8a;
 $tertiary-accent: #007bff;
 $accent-theme: #fe22c3;
-$background: #f7f7f8;
+$background: #e9e6e0;
 $dark-grey: #333;
 $medium-grey: #444;
 $heading-font: 'Josefin Sans', sans-serif;
@@ -466,12 +466,15 @@ a {
 }
 
 .project-container {
-    // border: 1px solid black;
     height: 60vh;
     margin-bottom: 10vh;
 
     h2 {
         @extend %branding-comment;
+    }
+
+    .featured-image {
+        border: 5px solid #fff;
     }
 
 }
@@ -772,8 +775,7 @@ a {
 // FOOTER
 
 #footer {
-    background-color: $secondary-theme;
-    // background: linear-gradient(to bottom, $secondary-theme, $secondary-accent);
+    background: linear-gradient(to right, $primary-theme, $primary-accent);
     padding: 10vh 0;
 
     img {
@@ -781,10 +783,14 @@ a {
     }
 
     p {
-        color: rgb(203, 248, 226);
+        color: $secondary-theme;
     }
 }
 
 #brand-footer {
     text-align: center;
+
+    p {
+        color: #fff;
+    }
 }
