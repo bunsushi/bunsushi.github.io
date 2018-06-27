@@ -466,7 +466,7 @@ a {
 }
 
 .project-container {
-    height: 60vh;
+    height: 70vh;
     margin-bottom: 10vh;
 
     h2 {
@@ -531,7 +531,7 @@ a {
     // padding: 0 10vw;
     // border: 1px solid $primary-accent;
     border-radius: 15px;
-    padding: 50px;
+    padding: 0 50px;
     margin: 20px;
 }
 
@@ -612,28 +612,6 @@ a {
     margin-left: 4vw;
     // transform: rotate(45deg);
     // width: 70vw;
-}
-
-.project-start {
-    width: 25%;
-    height: 100px;
-    background-color: $secondary-theme;
-}
-
-.project-end {
-    display: inline-block;
-    width: 25%;
-    height: 25%;
-    background-color: $accent-theme;
-    border: 100px solid #f7f7f8;
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-.project-end:before {
-    content: '';
-    padding-top: 100%;
-    float: left;
 }
 
 .project-summary {

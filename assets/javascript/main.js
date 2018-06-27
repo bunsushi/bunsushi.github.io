@@ -62,7 +62,7 @@ $(document).ready(function () {
             url: "https://github.com/bunsushi/Gilgamesh-Versus",
             repository: "https://github.com/bunsushi/Gilgamesh-Versus",
             featured: true,
-            description: "A browser-based role-playing game based on the ancient Mesopotamian story, the Epic of Gilgamesh. (Under development).",
+            description: "A role-playing game inspired by the ancient Mesopotamian story, the Epic of Gilgamesh. (Under development).",
             fulldescription: "Play as Gilgamesh, rule the city of Uruk, fight demons and gods with your best friend, and contemplate the meaning of life." + "<br><br>" + "I worked on a team of three developers. I was responsible for the original idea and both front-end and back-end development.",
             tags: ["Full Stack", "HTML/CSS", "React", "Bootstrap", "JavaScript", "Melon.js", "Node", "Express", "MongoDB", "Authentication"]
         },

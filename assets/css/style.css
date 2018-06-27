@@ -357,7 +357,7 @@ a {
     text-align: left; }
 
 .project-container {
-  height: 60vh;
+  height: 70vh;
   margin-bottom: 10vh; }
   .project-container .featured-image {
     border: 5px solid #fff; }
@@ -398,7 +398,7 @@ a {
 .project-details {
   width: 40%;
   border-radius: 15px;
-  padding: 50px;
+  padding: 0 50px;
   margin: 20px; }
 
 .project-container:nth-of-type(odd) .featured-image {
@@ -460,25 +460,6 @@ a {
 #other-projects {
   margin-top: 20vh;
   margin-left: 4vw; }
-
-.project-start {
-  width: 25%;
-  height: 100px;
-  background-color: #38806b; }
-
-.project-end {
-  display: inline-block;
-  width: 25%;
-  height: 25%;
-  background-color: #fe22c3;
-  border: 100px solid #f7f7f8;
-  border-radius: 50%;
-  overflow: hidden; }
-
-.project-end:before {
-  content: '';
-  padding-top: 100%;
-  float: left; }
 
 .project-summary {
   display: inline-block;
