@@ -59,12 +59,12 @@ $(document).ready(function () {
             name: "Gilgamesh Versus",
             image: "assets/images/gilgamesh-versus.png",
             square_image: "assets/images/gilgamesh-versus-square.png",
-            url: "https://github.com/bunsushi/Gilgamesh-Versus",
+            url: "https://gilgameshversus.herokuapp.com",
             repository: "https://github.com/bunsushi/Gilgamesh-Versus",
             featured: true,
-            description: "A role-playing game inspired by the ancient Mesopotamian story, the Epic of Gilgamesh. (Under development).",
-            fulldescription: "Play as Gilgamesh, rule the city of Uruk, fight demons and gods with your best friend, and contemplate the meaning of life." + "<br><br>" + "I worked on a team of three developers. I was responsible for the original idea and both front-end and back-end development.",
-            tags: ["Full Stack", "HTML/CSS", "React", "Bootstrap", "JavaScript", "Melon.js", "Node", "Express", "MongoDB", "Authentication"]
+            description: "A role-playing game inspired by the ancient Mesopotamian story, the Epic of Gilgamesh.",
+            fulldescription: `Gilgamesh Versus is a single-player role playing game (RPG) loosely adapted from the ancient Mesopotamian story The Epic of Gilgamesh. Play as Gilgamesh, rule the city of Uruk, fight demons and gods with your best friend, and contemplate the meaning of life. Gilgamesh Versus has eleven "tablets" which are broken up into several distinct levels, corresponding roughly to the story as written in the first eleven tablets of the standard Babylonian version of the epic. It is built with Phaser 3 (game engine), React, Express, Node, and MongoDB. I work as the project lead of a core team of three.` + `<br><br>` + `Currently, Tablet I, which contains three levels, is under active development. The first level is a side-scrolling platform game (similar to Mario), which serves as an introduction to the misdeeds of the king of Uruk, Gilgamesh. As Gilgamesh, you must collect coins and find a mace to rob the citizens of Uruk while avoiding dangerous flies (Mesopotamian gods) and water hazards.` + `<br></br>` + `In level 2, as punishment for bad behavior, the gods send the wild man Enkidu to stop Gilgamesh from oppressing his people. Gilgamesh must now explore the top-down city map of Uruk and solve a series of mini-games in order to gain the keys to the city gates and prepare for battle against Enkidu. These mini-games include learning how to brew beer, base-60 math, and basic Sumerian.` + `<br></br>` + `Finally, after the player has completed all of the mini-games within the top-down city of Uruk, Gilgamesh must find the city gate and solve a simple puzzle or riddle. Once he has solved this, Tablet I of the game ends...who will he find on the other side of the gate?`,
+            tags: ["Full Stack", "React", "Phaser 3", "MongoDB", "Express", "Node", "Authentication", "JavaScript", "HTML/CSS"]
         },
         {
             name: "Totes Ma Goats",
