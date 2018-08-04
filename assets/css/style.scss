@@ -34,7 +34,7 @@ body {
     color: $dark-grey;
     text-align: left;
     line-height: 2;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
     background-color: $background;
     position: relative;
     margin-top: 51px;
@@ -113,14 +113,7 @@ a {
 .navbar-default .navbar-nav>li>a:hover {
     font-weight: 700;
     color: $secondary-theme;
-    // border-bottom: 5px solid #fff;
 }
-
-// .navbar-brand p {
-//     width: 300px;
-//     color: $dark-grey;
-//     letter-spacing: 3px;
-// }
 
 .navbar-default .navbar-nav .social>li>a:focus, .navbar-default .navbar-nav .social>li>a:hover {
     border: none;
@@ -149,7 +142,6 @@ a {
 
 #brand-name {
     @extend %branding-heading;
-    // width: 100%;
     color: #fff;
     text-align: center;
 }
@@ -196,27 +188,12 @@ a {
 
 #elevator-pitch {
     z-index: 2;
-    // background-color: #fff;
-    // border-radius: 15px;
 }
 
 #about {
     background-color: #fff;
     position: relative;
 }
-
-// #about::before {
-//     content: "";
-//     position: absolute;
-//     display: block;
-//     bottom: -180px;
-//     border: 120px solid transparent;
-//     border-top-color: $primary-theme;
-//     left: 12%;
-//     opacity: .9;
-//     margin-left: -50px;
-//     z-index: 1;
-// }
 
 #profile {
     border-radius: 50%;
@@ -226,7 +203,6 @@ a {
 }
 
 #triangle {
-    // background-color: $primary-theme;
     width: 0;
     height: 0;
     border-top: 25vw solid transparent;
@@ -262,8 +238,6 @@ a {
 
 .glance-shape {
     position: relative;
-    // display: inline-block;
-    // width: 33%;
     text-align: center;
 
     p {
@@ -318,7 +292,6 @@ a {
         text-align: center;
         font-size: 14px;
         color: $medium-grey;
-        // border: 1px solid $dark-grey;
         position: relative;
         right: 6vw;
         top: 11vw;
@@ -345,7 +318,6 @@ a {
     z-index: 8;
     animation-name: drop-circle;
     animation-duration: 3s;
-    // box-shadow: 1vw 1vw $primary-accent;
 
     p {    
         color: #fff;
@@ -376,7 +348,6 @@ a {
     z-index: 9; 
     animation-name: drop-circle-2;
     animation-duration: 2s;
-    // box-shadow: 1vw 1vw $primary-accent;
 
     p {    
         color: $primary-theme;
@@ -461,7 +432,6 @@ a {
 
 #featured {
     background-color: #fff;
-    // padding: 50px 0;
     text-align: center;
 
     h1 {
@@ -530,10 +500,7 @@ a {
 }
 
 .project-details {
-    // display: inline-block;
     width: 40%;
-    // padding: 0 10vw;
-    // border: 1px solid $primary-accent;
     border-radius: 15px;
     padding: 0 50px;
     margin: 20px;
@@ -614,8 +581,6 @@ a {
 #other-projects {
     margin-top: 20vh;
     margin-left: 4vw;
-    // transform: rotate(45deg);
-    // width: 70vw;
 }
 
 .project-summary {
@@ -665,7 +630,6 @@ a {
     .project-title {
 
         h4 {
-            // visibility: hidden;
             display: none;
         }
 
@@ -703,7 +667,6 @@ a {
 
 .project-summary:nth-of-type(4n+3) .overlay {
     background-color: $secondary-accent;
-    // background-color: $dark-grey;
 }
 
 .other-links {
